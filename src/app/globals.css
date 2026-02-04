@@ -423,3 +423,43 @@ body {
     font-size: 24px;
   }
 }
+
+/* ===== Carousel mobile bigger (override) ===== */
+@media (max-width: 900px) {
+  .carousel {
+    margin-top: 22px;
+  }
+
+  /* tira o padding extra e deixa a imagem “cheia” */
+  .carousel-item {
+    padding: 0;
+  }
+
+  .carousel-viewport {
+    border-radius: 18px;
+  }
+
+  /* imagem maior e mais impactante */
+  .carousel-item img {
+    height: 320px; /* aumenta bastante */
+    border-radius: 18px;
+  }
+
+  /* setas não ocuparem tanto espaço lateral */
+  .carousel-shell {
+    gap: 8px;
+  }
+
+  .carousel-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 22px;
+  }
+}
+
+/* Extra: celulares bem pequenos */
+@media (max-width: 380px) {
+  .carousel-item img {
+    height: 280px;
+  }
+}
