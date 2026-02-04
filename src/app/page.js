@@ -247,6 +247,79 @@ export default function Home() {
   </div>
 </section>
 
+{/* TESTIMONIALS */}
+<section className="testimonials">
+  <div className="testimonials-wrap">
+    <h2 className="testimonials-title">WHO BOUGHT, APPROVED!</h2>
+
+    <p className="testimonials-sub">
+      Our book is a hit with professionals and ordinary people alike. See what
+      they’re saying:
+    </p>
+
+    <div className="testimonials-grid">
+      {/* Card 1 */}
+      <article className="t-card">
+        <div className="t-head">
+          <img className="t-avatar" src="/ml1.jpg" alt="Stefanny" />
+          <div className="t-meta">
+            <div className="t-name">Stefanny</div>
+            <div className="t-stars" aria-label="5 stars">
+              ★★★★★
+            </div>
+          </div>
+        </div>
+
+        <p className="t-text">
+          I love the material, very practical and beautiful. I liked it so much
+          that I recommended it to friends. Thank you for the material and your
+          attention. Approved!
+        </p>
+      </article>
+
+      {/* Card 2 */}
+      <article className="t-card">
+        <div className="t-head">
+          <img className="t-avatar" src="/ml2.jpg" alt="Sophia" />
+          <div className="t-meta">
+            <div className="t-name">Sophia</div>
+            <div className="t-stars" aria-label="5 stars">
+              ★★★★★
+            </div>
+          </div>
+        </div>
+
+        <p className="t-text">
+          I loved the recipes, they are simple and easy to prepare. I already
+          had the ingredients at home. Very convenient. I’m diabetic and these
+          recipes help me a lot to balance my blood sugar.
+        </p>
+      </article>
+
+      {/* Card 3 */}
+      <article className="t-card">
+        <div className="t-head">
+          <img className="t-avatar" src="/ml3.jpg" alt="Albert" />
+          <div className="t-meta">
+            <div className="t-name">Albert</div>
+            <div className="t-stars" aria-label="5 stars">
+              ★★★★★
+            </div>
+          </div>
+        </div>
+
+        <p className="t-text">
+          My wife saw the ad and we decided to buy it. Even I, who doesn’t
+          normally cook, made one and it went well. Payment was instant and
+          everything worked perfectly. I recommend it!
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
 
   
     </>

@@ -1142,3 +1142,136 @@ body {
 }
 
 
+
+/* ===== TESTIMONIALS (mobile-first) ===== */
+.testimonials {
+  background: #ffffff;
+  padding: 80px 18px;
+}
+
+.testimonials-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials-title {
+  color: #2b1240;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  line-height: 1.1;
+  font-size: clamp(22px, 6vw, 40px);
+}
+
+.testimonials-sub {
+  max-width: 780px;
+  margin: 14px auto 0;
+  color: rgba(43, 18, 64, 0.78);
+  font-size: clamp(24px, 3.6vw, 17px);
+  line-height: 1.6;
+}
+
+/* grid */
+.testimonials-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+/* card */
+.t-card {
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid rgba(43, 18, 64, 0.12);
+  border-radius: 18px;
+  padding: 18px 16px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+}
+
+/* head */
+.t-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.t-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 3px solid rgba(168, 76, 166, 0.25);
+  flex: 0 0 auto;
+}
+
+.t-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.t-name {
+  color: #2b1240;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.t-stars {
+  color: #a84ca6;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* text */
+.t-text {
+  color: rgba(43, 18, 64, 0.75);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* tablet */
+@media (min-width: 520px) {
+  .testimonials {
+    padding: 90px 24px;
+  }
+
+  .testimonials-grid {
+    gap: 18px;
+  }
+
+  .t-card {
+    padding: 20px;
+  }
+
+  .t-avatar {
+    width: 62px;
+    height: 62px;
+  }
+
+  .testimonials-sub {
+    font-size: 23;
+  }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+  .testimonials {
+    padding: 110px 32px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 38px;
+  }
+
+  .t-card {
+    padding: 22px;
+  }
+}
+
+
+
