@@ -1118,7 +1118,7 @@ body {
   .offer-note2 {
     font-size: 22px;
     margin-top: 24px;
-    margin-bottom: 24px;
+   
     
   }
 
@@ -1136,9 +1136,16 @@ body {
 
   .offer-price {
     font-size: 24px;
-margin-top: 24px;
+
   }
 
+.offer-down {
+  font-size: 30px;
+}
+
+.offer-cta {
+  font-size: 15px;
+}
 }
 
 
