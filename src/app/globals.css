@@ -159,12 +159,12 @@ body {
 /* BENEFITS */
 .benefits {
   background: white;
-  padding: 100px 40px;
+  padding: 120px 40px;
   text-align: center;
 }
 
 .benefits h2 {
-  font-size: 28px;
+  font-size: 42px;
   margin-bottom: 60px;
   color: #2b1240;
 }
@@ -172,8 +172,8 @@ body {
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  max-width: 1200px;
+  gap: 20px;
+  max-width: 1500px;
   margin: auto;
 }
 
@@ -183,12 +183,12 @@ body {
 }
 
 .benefit-card h3 {
-  font-size: 16px;
+  font-size: 24px;
   margin: 15px 0;
 }
 
 .benefit-card p {
-  font-size: 14px;
+  font-size: 20px;
   color: #555;
   line-height: 1.6;
 }
@@ -205,7 +205,7 @@ body {
   max-width: 900px;
   margin: auto;
   margin-bottom: 60px;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .recipes-grid {
@@ -278,7 +278,6 @@ body {
   transition-delay: 220ms;
 }
 
-/* respeita acessibilidade: se o user não gosta de animação */
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .reveal-visible {
@@ -288,7 +287,7 @@ body {
   }
 }
 
-/* ===== STORY (texto + carousel) ===== */
+
 .story {
   background: #fff;
   padding: 90px 24px;
@@ -306,13 +305,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.4px;
   line-height: 1.15;
-  font-size: clamp(18px, 2.2vw, 28px);
-  margin-bottom: 18px;
+  font-size: clamp(40px, 2.2vw, 28px);
+  margin-bottom: 25px;
 }
 
 .story-text {
   color: #4b3a57;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.8;
 }
 
