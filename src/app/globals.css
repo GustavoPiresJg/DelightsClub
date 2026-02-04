@@ -830,3 +830,84 @@ body {
     height: 220px;
   }
 }
+
+
+/* ===== SIMPLE FEATURES (title + check list) ===== */
+.simple-features {
+  background: #fff;
+  padding: 70px 24px;
+}
+
+.simple-features-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.simple-features-title {
+  color: #2b1240;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  line-height: 1.15;
+  font-size: clamp(20px, 2.4vw, 32px);
+  margin-bottom: 22px;
+}
+
+.simple-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-flex;         /* fica centralizado igual na imagem */
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;             /* texto alinhado bonito na lista */
+}
+
+.simple-features-list li {
+  position: relative;
+  padding-left: 34px;
+  color: #2b1240;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  font-size: clamp(16px, 1.5vw, 22px);
+  line-height: 1.2;
+}
+
+/* check */
+.simple-features-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.02em;
+  font-size: 1.15em;
+  font-weight: 900;
+  color: #2b1240;
+}
+
+/* mobile: dá uma respirada e mantém legível */
+@media (max-width: 900px) {
+  .simple-features {
+    padding: 56px 18px;
+  }
+
+  .simple-features-list {
+    gap: 12px;
+  }
+
+  .simple-features-list li {
+    padding-left: 30px;
+  }
+}
+
+/* ===== Ajuste extra pra celular médio (melhor leitura) ===== */
+@media (max-width: 520px) {
+  .simple-features-title {
+    font-size: 29px; /* aumenta só no celular */
+  }
+
+  .simple-features-list li {
+    font-size: 18px; /* deixa a lista mais confortável */
+  }
+}

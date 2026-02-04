@@ -187,6 +187,25 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* FEATURES SIMPLE */}
+<section className="simple-features">
+  <div className="simple-features-wrap">
+    <h2 className="simple-features-title">
+      THE MOST DELICIOUS MEALS IN VERSIONS
+    </h2>
+
+    <ul className="simple-features-list">
+      <li>LOW IN CALORIES</li>
+      <li>ZERO SUGAR</li>
+      <li>ZERO GLUTEN</li>
+      <li>DAIRY FREE</li>
+      <li>LOW CARB</li>
+    </ul>
+  </div>
+</section>
+
+
   
     </>
   );
