@@ -206,6 +206,48 @@ export default function Home() {
 </section>
 
 
+
+
+{/* OFFER / PRICE */}
+<section className="offer">
+  <div className="offer-wrap">
+    <p className="offer-top">Do not lose this chance!</p>
+
+    <h2 className="offer-title">Limited time book promotion</h2>
+    <h3 className="offer-subtitle">More than 80% discount!</h3>
+
+    <div className="offer-book">
+      <img src="/offer-book.png" alt="Zero Delights Book" />
+    </div>
+
+    <p className="offer-price">
+      From <span className="offer-old">$67.90</span> for only{" "}
+      <span className="offer-new">$17.00</span>
+    </p>
+
+    <p className="offer-note">PRICE IN DOLAR</p>
+    <p className="offer-note2">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</p>
+
+    <div className="offer-down">⬇️</div>
+
+    <button className="offer-cta">
+      YEAH! I WANT THE RECIPES
+    </button>
+
+    <div className="offer-stock">
+      <div className="offer-stock-top">
+        <span>LAST 8 UNITS AVAILABLE</span>
+        <span className="offer-stock-right">85%</span>
+      </div>
+
+      <div className="offer-bar">
+        <div className="offer-bar-fill" style={{ width: "92%" }} />
+      </div>
+    </div>
+  </div>
+</section>
+
+
   
     </>
   );
