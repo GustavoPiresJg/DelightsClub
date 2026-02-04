@@ -1102,7 +1102,6 @@ body {
   .offer-stock {
     width: 100%;
     max-width: 360px;
-    margin: 24px;
   }
 
   .offer-bar {
@@ -1112,27 +1111,21 @@ body {
 
   .offer-note {
     font-size: 22;
- margin-top: 24px;
   }
 
   .offer-note2 {
     font-size: 22px;
-    margin-top: 24px;
    
     
   }
 
   .offer-old{
     font-size: 24px;
-    margin: 6px;
   }
 
 .offer-new{
-  margin-top: 24px;
   font-size: 24px;
   }
-
-
 
   .offer-price {
     font-size: 24px;
