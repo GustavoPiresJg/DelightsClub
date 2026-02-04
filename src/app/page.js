@@ -318,6 +318,46 @@ export default function Home() {
   </div>
 </section>
 
+{/* STATS / PROOF */}
+<section className="stats">
+  <div className="stats-wrap">
+    <h2 className="stats-title">
+      DID YOU KNOW THAT IT IS PROVEN BY DOCTORS AND NUTRITIONISTS THAT FOOD IS
+      THE KEY TO TOTAL CONTROL OF DIABETES?
+    </h2>
+
+    <p className="stats-sub">
+      Every year, the number of people who discover this secret and change their
+      lives grows. See what the latest data suggests:
+    </p>
+
+    <div className="stats-grid">
+      <StatCard
+        id="s1"
+        prefix="+"
+        value={7000000}
+        suffix=""
+        label="More than 7 million people around the world have lost weight and controlled their diabetes."
+      />
+
+      <StatCard
+        id="s2"
+        prefix="+"
+        value={1000}
+        suffix=""
+        label="A habit change indicated for those who want to control diabetes naturally and without medication."
+      />
+
+      <StatCard
+        id="s3"
+        prefix="+"
+        value={6257314}
+        suffix=""
+        label="Millions of people around the world reported dozens of benefits just by changing their diet."
+      />
+    </div>
+  </div>
+</section>
 
 
 
@@ -425,6 +465,61 @@ function Carousel() {
           />
         ))}
       </div>
+    </div>
+  );
+}
+
+function StatCard({ id, prefix = "", value = 0, suffix = "", label = "" }) {
+  const ref = useRef(null);
+  const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    if (!ref.current) return;
+
+    const el = ref.current;
+    let started = false;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !started) {
+          started = true;
+
+          const duration = 700; // rápido e bonito
+          const start = performance.now();
+          const from = 0;
+
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            // easing suave mas rápido
+            const eased = 1 - Math.pow(1 - t, 3);
+            const current = Math.round(from + (value - from) * eased);
+            setDisplay(current);
+
+            if (t < 1) requestAnimationFrame(tick);
+          };
+
+          requestAnimationFrame(tick);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [value]);
+
+  const format = (n) => n.toLocaleString("en-US");
+
+  return (
+    <div className="stat-card" ref={ref} id={id}>
+      <div className="stat-number">
+        <span className="stat-prefix">{prefix}</span>
+        {format(display)}
+        <span className="stat-suffix">{suffix}</span>
+      </div>
+
+      <p className="stat-text">{label}</p>
     </div>
   );
 }
