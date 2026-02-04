@@ -6,10 +6,10 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-text">
             <h1>
-              JOIN THE ZERO DELIGHTS CLUB AND NEVER DEPRIVE YOURSELF AGAIN!<br />
-              GET 500+ RECIPES, VIDEO LESSONS, AND DAILY UPDATES IN OUR VIP COMMUNITY!<br />
+              JOIN THE ZERO DELIGHTS CLUB AND NEVER DEPRIVE YOURSELF AGAIN!
+              GET 500+ RECIPES, VIDEO LESSONS, AND DAILY UPDATES IN OUR VIP COMMUNITY!
               GO BACK TO EATING THE MOST VARIED AND DELICIOUS FOODS WITH THE SUPPORT YOU DESERVE!
-            </h1>
+            </h1> 
 
           <div className="hero-image">
             <img src="/recipe-card.png" alt="Recipes preview" />
