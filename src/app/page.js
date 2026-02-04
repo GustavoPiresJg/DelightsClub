@@ -384,6 +384,82 @@ export default function Home() {
   </div>
 </section>
 
+{/* WHAT YOU WILL GET / OFFER CARD */}
+<section className="whatget">
+  <div className="whatget-wrap">
+    <div className="whatget-card">
+      <h2 className="whatget-title">SEE WHAT YOU WILL GET</h2>
+      <p className="whatget-sub">
+        Everything you need to eat well without feeling restricted.
+      </p>
+
+      <ul className="whatget-list">
+        <li>
+          <span className="tick">✓</span>
+          <span><b>500 delicious & practical recipes</b> (easy step-by-step)</span>
+        </li>
+
+        <li>
+          <span className="tick">✓</span>
+          <span><b>VIP Members Community</b> (private updates + motivation)</span>
+        </li>
+
+        <li>
+          <span className="tick">✓</span>
+          <span><b>Bonus Ebook:</b> 100 Zero Bread Recipes</span>
+        </li>
+
+        <li>
+          <span className="tick">✓</span>
+          <span><b>Video lessons</b> (simple & straight to the point)</span>
+        </li>
+
+        <li>
+          <span className="tick">✓</span>
+          <span><b>Done-for-you meal ideas</b> (save time every day)</span>
+        </li>
+        
+        <li>
+          <span className="tick">✓</span>
+          <span><b>Instant access</b> right after payment confirmation</span>
+        </li>
+      </ul>
+
+      <div className="whatget-divider" />
+
+      <div className="whatget-price">
+        <div className="price-line">
+          From <span className="old">$67.90</span> for only
+        </div>
+        <div className="new">$17.00</div>
+      </div>
+
+      <div className="whatget-pay">
+        <div className="pay-title">PRICE IN DOLAR</div>
+        <div className="pay-sub">
+          PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW
+        </div>
+        <div className="pay-arrow" aria-hidden="true">⬇</div>
+      </div>
+
+      <button className="whatget-cta">BUY NOW</button>
+
+      <div className="whatget-stock">
+        <div className="stock-top">
+          <span>LAST 8 UNITS AVAILABLE</span>
+          <span className="stock-pct">85%</span>
+        </div>
+
+        <div className="stock-bar">
+          <div className="stock-fill" style={{ width: "85%" }} />
+        </div>
+      </div>
+
+      <div className="whatget-safe">🔒 SAFE PURCHASE</div>
+    </div>
+  </div>
+</section>
+
 
   
     </>
