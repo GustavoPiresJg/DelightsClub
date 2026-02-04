@@ -187,85 +187,7 @@ export default function Home() {
         </div>
       </section>
 
-    {/* WHATSAPP COMMUNITY (ADMIN-ONLY) */}
-<section className="community reveal">
-  <div className="community-wrap">
-    <div className="community-left">
-      <h2 className="community-title">
-        YOUR VIP WHATSAPP COMMUNITY <br />
-        (DAILY RECIPES EVERY DAY)
-      </h2>
-
-      <p className="community-sub">
-        Join our private, closed WhatsApp <b>community channel</b> and receive a fresh
-        recipe daily so you stay consistent without overthinking what to eat.
-      </p>
-
-      <ul className="community-list">
-        <li>✅ 1 recipe per day (simple daily routine)</li>
-        <li>✅ quick & practical recipes</li>
-        <li>✅ zero sugar, no guilt</li>
-        <li>✅ motivation and support to keep going</li>
-      </ul>
-
-      <button className="cta community-cta">
-        YES! I WANT DAILY RECIPES <span className="cta-arrow">→</span>
-      </button>
-
-      <p className="community-note">
-        *You’ll receive access details right after purchase.
-      </p>
-    </div>
-
-    <div className="community-right">
-      <div className="wa-mock">
-        <div className="wa-top">
-          <div className="wa-avatar" />
-          <div className="wa-top-text">
-            <div className="wa-name">Zero Delights Club</div>
-            <div className="wa-status">Community Channel • Daily Recipe</div>
-          </div>
-        </div>
-
-        <div className="wa-chat">
-          <div className="wa-bubble wa-bubble-left">
-            Today’s recipe is live ✅
-            <span className="wa-time">09:02</span>
-          </div>
-
-          <div className="wa-bubble wa-bubble-left">
-            🍳 “3-Minute Zero Sugar Pancakes”
-            <span className="wa-time">09:03</span>
-          </div>
-
-          {/* PHOTO MESSAGE (placeholder) */}
-          <div className="wa-bubble wa-bubble-left wa-bubble-photo">
-            <img
-              className="wa-photo"
-              src="/recipe-photo.jpg"
-              alt="Pancakes recipe"
-            />
-            <div className="wa-photoText">
-              <div className="wa-photoTitle">Zero Sugar Pancakes</div>
-              <div className="wa-photoLine">
-                Ingredients: eggs, almond flour, cinnamon...
-              </div>
-            </div>
-            <span className="wa-time">09:04</span>
-          </div>
-
-          <div className="wa-bubble wa-bubble-left">
-            Tomorrow: a new dessert recipe 😍
-            <span className="wa-time">09:07</span>
-          </div>
-        </div>
-
-    
-      </div>
-    </div>
-  </div>
-</section>
-
+  
     </>
   );
 }
@@ -279,7 +201,7 @@ function Carousel() {
   const [index, setIndex] = useState(0);
   const [perView, setPerView] = useState(4);
 
-  useEffect(() => {
+   useEffect(() => {
     const update = () => setPerView(window.innerWidth <= 900 ? 1 : 4);
     update();
     window.addEventListener("resize", update);
@@ -320,7 +242,7 @@ function Carousel() {
   const translatePct = (index * 100) / perView;
 
   return (
-    <div className="carousel reveal">
+    <div className="carousel">
       <div className="carousel-shell">
         <button
           className="carousel-btn left"
