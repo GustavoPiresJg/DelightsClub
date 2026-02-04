@@ -1075,15 +1075,15 @@ body {
   }
 
   .offer-top {
-    font-size: 16px;
-  }
-
-  .offer-title {
     font-size: 20px;
   }
 
+  .offer-title {
+    font-size: 30px;
+  }
+
   .offer-subtitle {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 18px;
   }
 
@@ -1107,6 +1107,29 @@ body {
   .offer-bar {
     height: 14px;
   }
+
+  .offer-note {
+    font-size: 22;
+  }
+
+  .offer-note2 {
+    font-size: 22px;
+  }
+
+  .offer-old{
+    font-size: 24px;
+  }
+
+.offer-new{
+    font-size: 24px;
+  }
+
+
+
+  .offer-price {
+    font-size: 24px;
+  }
+
 }
 
 

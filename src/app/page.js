@@ -217,7 +217,7 @@ export default function Home() {
     <h3 className="offer-subtitle">More than 80% discount!</h3>
 
     <div className="offer-book">
-      <img src="/offer-book.png" alt="Zero Delights Book" />
+      <img src="/book.png" alt="Zero Delights Book" />
     </div>
 
     <p className="offer-price">
