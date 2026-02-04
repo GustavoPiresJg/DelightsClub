@@ -287,3 +287,139 @@ body {
     opacity: 1 !important;
   }
 }
+
+/* ===== STORY (texto + carousel) ===== */
+.story {
+  background: #fff;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+.story-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.story-title {
+  color: #2b1240;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  line-height: 1.15;
+  font-size: clamp(18px, 2.2vw, 28px);
+  margin-bottom: 18px;
+}
+
+.story-text {
+  color: #4b3a57;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.story-text p {
+  margin: 14px 0;
+}
+
+/* ===== CAROUSEL (swipe + arrows) ===== */
+.carousel {
+  margin-top: 34px;
+}
+
+.carousel-shell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 14px;
+  background: #f6f3f8;
+  touch-action: pan-y; /* permite scroll vertical e swipe horizontal */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 320ms ease;
+}
+
+.carousel-item {
+  flex: 0 0 calc(100% / 4);
+  padding: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* buttons */
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: #2b1240;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+  opacity: 0.95;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.carousel-btn:hover {
+  transform: translateY(-1px);
+  opacity: 1;
+}
+
+.carousel-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: none;
+  background: #d4c8df;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #2b1240;
+}
+
+/* MOBILE: 1 por vez, setas menores */
+@media (max-width: 900px) {
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+
+  .carousel-item img {
+    height: 220px;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+  }
+}
