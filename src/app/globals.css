@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: white;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #4b245f, #a84ca6);
+  padding: 100px 40px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  color: white;
+  font-size: 34px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 420px;
+}
+
+/* CTA */
+.cta {
+  margin-top: 30px;
+  background: #2b1240;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* BENEFITS */
+.benefits {
+  background: white;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 28px;
+  margin-bottom: 60px;
+  color: #2b1240;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.benefit-card span {
+  font-size: 36px;
+  color: #2b1240;
+}
+
+.benefit-card h3 {
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.benefit-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RECIPES */
+.recipes {
+  background: linear-gradient(135deg, #3c355d, #3f3a6d);
+  padding: 100px 40px;
+  text-align: center;
+  color: white;
+}
+
+.recipes h2 {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.recipe-card {
+  background: white;
+  color: #2b1240;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+}
