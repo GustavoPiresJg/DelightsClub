@@ -312,7 +312,8 @@ body {
 .story-text {
   color: #4b3a57;
   font-size: 20px;
-  line-height: 1.8;
+  line-height: 1.5;
+  text-align: inherit;
 }
 
 .story-text p {
@@ -406,7 +407,6 @@ body {
   background: #2b1240;
 }
 
-/* MOBILE: 1 por vez, setas menores */
 @media (max-width: 900px) {
   .carousel-item {
     flex: 0 0 100%;
@@ -423,13 +423,13 @@ body {
   }
 }
 
-/* ===== Carousel mobile bigger (override) ===== */
+
 @media (max-width: 900px) {
   .carousel {
     margin-top: 22px;
   }
 
-  /* tira o padding extra e deixa a imagem “cheia” */
+  
   .carousel-item {
     padding: 0;
   }
@@ -462,3 +462,15 @@ body {
     height: 280px;
   }
 }
+
+/* ===== STORY title smaller on mobile ===== */
+@media (max-width: 900px) {
+  .story-title {
+    font-size: 25px;   /* diminui só no celular */
+    line-height: 1.6;
+    max-width: 34ch;   /* quebra melhor a linha */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
