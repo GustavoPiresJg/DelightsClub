@@ -361,6 +361,30 @@ export default function Home() {
 
 
 
+{/* GUARANTEE */}
+<section className="guarantee">
+  <div className="guarantee-wrap">
+    <div className="guarantee-badge">
+      <img
+        src="/guarantee-7-days.png"
+        alt="7 Day Money Back Guarantee"
+        loading="lazy"
+      />
+    </div>
+
+    <div className="guarantee-content">
+      <h2 className="guarantee-title">UNCONDITIONAL GUARANTEE</h2>
+
+      <p className="guarantee-text">
+        If you buy our recipes and for some reason you don’t like it, just ask
+        us for your money back within 7 days of purchase and we’ll give you a
+        100% refund, without any red tape!
+      </p>
+    </div>
+  </div>
+</section>
+
+
   
     </>
   );

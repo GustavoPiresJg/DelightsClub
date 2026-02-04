@@ -1374,3 +1374,76 @@ body {
     font-size: 15px;
   }
 }
+
+/* ===== GUARANTEE SECTION ===== */
+.guarantee {
+  background: #fff;
+  padding: 90px 24px;
+}
+
+.guarantee-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.guarantee-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guarantee-badge img {
+  width: min(320px, 100%);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.18));
+}
+
+.guarantee-title {
+  color: #2b1240;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-size: clamp(22px, 2.2vw, 36px);
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.guarantee-text {
+  color: #4b3a57;
+  font-size: clamp(14px, 1.15vw, 18px);
+  line-height: 1.75;
+  max-width: 56ch;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .guarantee {
+    padding: 70px 18px;
+  }
+
+  .guarantee-wrap {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .guarantee-badge img {
+    width: min(260px, 78vw);
+  }
+
+  .guarantee-text {
+    margin: 0 auto;
+  }
+}
+
+/* celulares menores */
+@media (max-width: 380px) {
+  .guarantee-badge img {
+    width: min(240px, 84vw);
+  }
+}
