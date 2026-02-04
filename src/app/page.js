@@ -1,26 +1,29 @@
 export default function Home() {
   return (
     <>
-      {/* HERO */}
-      <section className="hero">
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1>
-              JOIN THE ZERO DELIGHTS CLUB AND NEVER DEPRIVE YOURSELF AGAIN!
-              GET 500+ RECIPES, VIDEO LESSONS, AND DAILY UPDATES IN OUR VIP COMMUNITY!
-              GO BACK TO EATING THE MOST VARIED AND DELICIOUS FOODS WITH THE SUPPORT YOU DESERVE!
-            </h1> 
+    {/* HERO */}
+<section className="hero">
+  <div className="hero-content">
+    <div className="hero-text">
+      <h1>
+        LEARN EASY AND DELICIOUS RECIPES SO THAT YOU NO LONGER HAVE TO DEPRIVE
+        YOURSELF OF ANYTHING, AND GO BACK TO EATING THE MOST VARIED AND
+        DELICIOUS TYPES OF FOOD!
+      </h1>
 
-          <div className="hero-image">
-            <img src="/recipe-card.png" alt="Recipes preview" />
-          </div>
-            <button className="cta">
-              YEAH! I WANT THE ZERO DELIGHTS CLUB
-            </button>
-          </div>
-        </div>
+      <button className="cta">
+        YEAH! I WANT THE ZERO DELIGHTS CLUB
+        <span className="cta-arrow">→</span>
+      </button>
+    </div>
 
-      </section>
+    {/* essa imagem pode ser trocada depois */}
+    <div className="hero-image">
+      <img src="/recipe-card.png" alt="Recipes preview" />
+    </div>
+  </div>
+</section>
+
 
       {/* BENEFITS */}
       <section className="benefits">

@@ -5,6 +5,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* evita scroll lateral branco */
+}
+
 body {
   background: white;
 }
@@ -13,6 +19,36 @@ body {
 .hero {
   background: linear-gradient(135deg, #4b245f, #a84ca6);
   padding: 100px 40px;
+
+  /* decor leve e sem quebrar layout */
+  position: relative;
+  overflow: hidden;
+}
+
+/* bolhas decorativas leves */
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.hero::before {
+  width: 520px;
+  height: 520px;
+  background: #ff4fd8;
+  right: -220px;
+  top: 120px;
+}
+
+.hero::after {
+  width: 340px;
+  height: 340px;
+  background: #6c2f9b;
+  left: -160px;
+  top: 220px;
 }
 
 .hero-content {
@@ -31,12 +67,17 @@ body {
   align-items: center;
 }
 
-
 .hero-text h1 {
   color: white;
-  font-size: 34px;
-  line-height: 1.4;
+
+  /* responsivo: menor no celular, maior no pc */
+  font-size: clamp(22px, 3.2vw, 44px);
+  line-height: 1.12;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
   text-align: left;
+  max-width: 900px;
 }
 
 .hero-image {
@@ -49,6 +90,10 @@ body {
   width: 100%;
   max-width: 420px;
   height: auto;
+
+  /* dá mais “cara de landing” sem pesar */
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
 }
 
 /* CTA */
@@ -61,6 +106,67 @@ body {
   border-radius: 50px;
   font-size: 15px;
   cursor: pointer;
+
+  /* animação leve */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transform: translateY(0);
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.05);
+}
+
+.cta:active {
+  transform: translateY(0);
+}
+
+.cta::after {
+  /* brilho passando (leve) */
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -40%;
+  width: 60%;
+  height: 160%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: rotate(18deg);
+  opacity: 0;
+}
+
+.cta:hover::after {
+  opacity: 1;
+  animation: shine 650ms ease;
+}
+
+@keyframes shine {
+  from {
+    left: -40%;
+  }
+  to {
+    left: 120%;
+  }
+}
+
+/* opcional (se você colocou a setinha no botão) */
+.cta-arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transform: translateX(0);
+  transition: transform 160ms ease;
+}
+
+.cta:hover .cta-arrow {
+  transform: translateX(3px);
 }
 
 /* BENEFITS */
@@ -144,8 +250,9 @@ body {
   }
 
   .hero-text h1 {
-    font-size: 22px;
     text-align: center;
+    max-width: 30ch; /* evita linhas enormes no celular */
+    line-height: 1.15;
   }
 
   .benefits-grid {
@@ -156,9 +263,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-body {
-  background: white;
-  overflow-x: hidden;
-}
-
