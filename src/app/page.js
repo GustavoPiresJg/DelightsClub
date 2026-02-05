@@ -25,46 +25,49 @@ export default function Home() {
 
   return (
     <>
-     {/* HERO */}
-<section className="hero reveal">
-  <div className="hero-content">
-    <div className="hero-grid">
-      <div className="hero-copy">
-        <h1>
-          LEARN EASY AND DELICIOUS RECIPES SO THAT YOU NO LONGER HAVE TO
-          DEPRIVE YOURSELF OF ANYTHING, AND GO BACK TO EATING THE MOST
-          VARIED AND DELICIOUS TYPES OF FOOD!
-        </h1>
+      {/* HERO */}
+      <section className="hero reveal">
+        <div className="hero-content">
+          <div className="hero-grid">
+            <div className="hero-copy">
+              <h1>
+                LEARN EASY AND DELICIOUS RECIPES SO THAT YOU NO LONGER HAVE TO
+                DEPRIVE YOURSELF OF ANYTHING, AND GO BACK TO EATING THE MOST
+                VARIED AND DELICIOUS TYPES OF FOOD!
+              </h1>
 
-        <p className="hero-sub">
-          Simple, practical, and sugar-free recipes to make your day easier without feeling restricted.
-        </p>
+              <p className="hero-sub">
+                Simple, practical, and sugar-free recipes to make your day easier without feeling restricted.
+              </p>
 
-        <div className="hero-social">
-          <div className="hero-stars" aria-label="5 star rating">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <div className="hero-social">
+                <div className="hero-stars" aria-label="5 star rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span className="hero-proof">
+                  Join 1,000+ people improving their routine with us
+                </span>
+              </div>
+
+              <a href="#checkout">
+                <button className="cta reveal reveal-delay-2">
+                  YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="cta-arrow">→</span>
+                </button>
+              </a>
+
+            </div>
+
+            <div className="hero-visual">
+              <div className="hero-image reveal reveal-delay-1">
+
+                <div className="hero-image-wrapper">
+                  <img src="/recipe-card.png" alt="Recipes preview" />
+                </div>
+              </div>
+            </div>
           </div>
-          <span className="hero-proof">
-            Join 1,000+ people improving their routine with us
-          </span>
         </div>
-
-        <button className="cta reveal reveal-delay-2">
-          YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="cta-arrow">→</span>
-        </button>
-      </div>
-
-      <div className="hero-visual">
-        <div className="hero-image reveal reveal-delay-1">
-
-          <div className="hero-image-wrapper">
-          <img src="/recipe-card.png" alt="Recipes preview" />
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
+      </section>
 
 
       {/* BENEFITS */}
@@ -209,377 +212,335 @@ export default function Home() {
 
 
       {/* FEATURES SIMPLE */}
-<section className="simple-features">
-  <div className="simple-features-wrap">
-    <h2 className="simple-features-title">
-      THE MOST DELICIOUS MEALS IN VERSIONS
-    </h2>
+      <section className="simple-features">
+        <div className="simple-features-wrap">
+          <h2 className="simple-features-title">
+            THE MOST DELICIOUS MEALS IN VERSIONS
+          </h2>
 
-    <ul className="simple-features-list">
-      <li>LOW IN CALORIES</li>
-      <li>ZERO SUGAR</li>
-      <li>ZERO GLUTEN</li>
-      <li>DAIRY FREE</li>
-      <li>LOW CARB</li>
-    </ul>
-  </div>
-</section>
-{/* OFFER / PRICE */}
-<section className="whatget whatget--mid">
-  <div className="whatget-wrap whatget-wrap--split">
-
-    <div className="whatget-mock">
-   
-      <img src="/bundle-mockup.png" alt="Zero Delights Club bundle" />
-      <div className="whatget-kicker">
-        Instant access • Bonuses included • Limited-time price
-      </div>
-    </div>
-
-    {/* RIGHT: o card igual */}
-    <div className="whatget-card">
-      <h2 className="whatget-title">SEE WHAT YOU WILL GET</h2>
-      <p className="whatget-sub">
-        Everything you need to eat well without feeling restricted.
-      </p>
-
-      <ul className="whatget-list">
-        <li><span className="tick">✓</span><span><b>500 delicious & practical recipes</b> (easy step-by-step)</span></li>
-        <li><span className="tick">✓</span><span><b>VIP Members Community</b> (private updates + motivation)</span></li>
-        <li><span className="tick">✓</span><span><b>Bonus Ebook:</b> 100 Zero Bread Recipes</span></li>
-        <li><span className="tick">✓</span><span><b>Video lessons</b> (simple & straight to the point)</span></li>
-        <li><span className="tick">✓</span><span><b>Done-for-you meal ideas</b> (save time every day)</span></li>
-        <li><span className="tick">✓</span><span><b>Instant access</b> right after payment confirmation</span></li>
-      </ul>
-
-      <div className="whatget-divider" />
-
-      <div className="whatget-price">
-        <div className="price-line">
-          From <span className="old">$67.90</span> for only
+          <ul className="simple-features-list">
+            <li>LOW IN CALORIES</li>
+            <li>ZERO SUGAR</li>
+            <li>ZERO GLUTEN</li>
+            <li>DAIRY FREE</li>
+            <li>LOW CARB</li>
+          </ul>
         </div>
-        <div className="new">$17.00</div>
-      </div>
+      </section>
+      {/* OFFER / PRICE */}
+      <section className="whatget whatget--mid">
+        <div className="whatget-wrap whatget-wrap--split">
 
-      <div className="whatget-pay">
-        <div className="pay-title">PRICE IN DOLAR</div>
-        <div className="pay-sub">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</div>
-        <div className="pay-arrow" aria-hidden="true">⬇</div>
-      </div>
+          <div className="whatget-mock">
 
-      <button className="whatget-cta">BUY NOW</button>
+            <img src="/bundle-mockup.png" alt="Zero Delights Club bundle" />
+            <div className="whatget-kicker">
+              Instant access • Bonuses included • Limited-time price
+            </div>
+          </div>
 
-      <div className="whatget-stock">
-        <div className="stock-top">
-          <span>LAST 8 UNITS AVAILABLE</span>
-          <span className="stock-pct">85%</span>
+          {/* RIGHT: o card igual */}
+          <div className="whatget-card">
+            <h2 className="whatget-title">SEE WHAT YOU WILL GET</h2>
+            <p className="whatget-sub">
+              Everything you need to eat well without feeling restricted.
+            </p>
+
+            <ul className="whatget-list">
+              <li><span className="tick">✓</span><span><b>500 delicious & practical recipes</b> (easy step-by-step)</span></li>
+              <li><span className="tick">✓</span><span><b>VIP Members Community</b> (private updates + motivation)</span></li>
+              <li><span className="tick">✓</span><span><b>Bonus Ebook:</b> 100 Zero Bread Recipes</span></li>
+              <li><span className="tick">✓</span><span><b>Video lessons</b> (simple & straight to the point)</span></li>
+              <li><span className="tick">✓</span><span><b>Done-for-you meal ideas</b> (save time every day)</span></li>
+              <li><span className="tick">✓</span><span><b>Instant access</b> right after payment confirmation</span></li>
+            </ul>
+
+            <div className="whatget-divider" />
+
+            <div className="whatget-price">
+              <div className="price-line">
+                From <span className="old">$67.90</span> for only
+              </div>
+              <div className="new">$17.00</div>
+            </div>
+
+            <div className="whatget-pay">
+              <div className="pay-title">PRICE IN DOLAR</div>
+              <div className="pay-sub">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</div>
+              <div className="pay-arrow" aria-hidden="true">⬇</div>
+            </div>
+
+            <button className="whatget-cta">BUY NOW</button>
+
+            <div className="whatget-stock">
+              <div className="stock-top">
+                <span>LAST 8 UNITS AVAILABLE</span>
+                <span className="stock-pct">85%</span>
+              </div>
+              <div className="stock-bar">
+                <div className="stock-fill" style={{ width: "85%" }} />
+              </div>
+            </div>
+
+            <div className="whatget-safe">🔒 SAFE PURCHASE</div>
+          </div>
         </div>
-        <div className="stock-bar">
-          <div className="stock-fill" style={{ width: "85%" }} />
+      </section>
+
+
+      {/* TESTIMONIALS */}
+      <section className="testimonials">
+        <div className="testimonials-wrap">
+          <h2 className="testimonials-title">WHO BOUGHT, APPROVED!</h2>
+
+          <p className="testimonials-sub">
+            Our book is a hit with professionals and ordinary people alike. See what
+            they’re saying:
+          </p>
+
+          <div className="testimonials-grid">
+            {/* Card 1 */}
+            <article className="t-card">
+              <div className="t-head">
+                <img className="t-avatar" src="/ml1.jpg" alt="Stefanny" />
+                <div className="t-meta">
+                  <div className="t-name">Stefanny</div>
+                  <div className="t-stars" aria-label="5 stars">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+
+              <p className="t-text">
+                I love the material, very practical and beautiful. I liked it so much
+                that I recommended it to friends. Thank you for the material and your
+                attention. Approved!
+              </p>
+            </article>
+
+            {/* Card 2 */}
+            <article className="t-card">
+              <div className="t-head">
+                <img className="t-avatar" src="/ml2.jpg" alt="Sophia" />
+                <div className="t-meta">
+                  <div className="t-name">Sophia</div>
+                  <div className="t-stars" aria-label="5 stars">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+
+              <p className="t-text">
+                I loved the recipes, they are simple and easy to prepare. I already
+                had the ingredients at home. Very convenient. I’m diabetic and these
+                recipes help me a lot to balance my blood sugar.
+              </p>
+            </article>
+
+            {/* Card 3 */}
+            <article className="t-card">
+              <div className="t-head">
+                <img className="t-avatar" src="/ml3.jpg" alt="Albert" />
+                <div className="t-meta">
+                  <div className="t-name">Albert</div>
+                  <div className="t-stars" aria-label="5 stars">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+
+              <p className="t-text">
+                My wife saw the ad and we decided to buy it. Even I, who doesn’t
+                normally cook, made one and it went well. Payment was instant and
+                everything worked perfectly. I recommend it!
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="whatget-safe">🔒 SAFE PURCHASE</div>
-    </div>
-  </div>
-</section>
+      {/* STATS / PROOF */}
+      <section className="stats">
+        <div className="stats-wrap">
+          <h2 className="stats-title">
+            DID YOU KNOW THAT IT IS PROVEN BY DOCTORS AND NUTRITIONISTS THAT FOOD IS
+            THE KEY TO TOTAL CONTROL OF DIABETES?
+          </h2>
+
+          <p className="stats-sub">
+            Every year, the number of people who discover this secret and change their
+            lives grows. See what the latest data suggests:
+          </p>
+
+          <div className="stats-grid">
+            <StatCard
+              id="s1"
+              prefix="+"
+              value={7000000}
+              suffix=""
+              label="More than 7 million people around the world have lost weight and controlled their diabetes."
+            />
+
+            <StatCard
+              id="s2"
+              prefix="+"
+              value={1000}
+              suffix=""
+              label="A habit change indicated for those who want to control diabetes naturally and without medication."
+            />
+
+            <StatCard
+              id="s3"
+              prefix="+"
+              value={6257314}
+              suffix=""
+              label="Millions of people around the world reported dozens of benefits just by changing their diet."
+            />
+          </div>
+        </div>
+      </section>
 
 
-{/* TESTIMONIALS */}
-<section className="testimonials">
-  <div className="testimonials-wrap">
-    <h2 className="testimonials-title">WHO BOUGHT, APPROVED!</h2>
 
-    <p className="testimonials-sub">
-      Our book is a hit with professionals and ordinary people alike. See what
-      they’re saying:
-    </p>
+      {/* GUARANTEE */}
+      <section className="guarantee">
+        <div className="guarantee-wrap">
+          <div className="guarantee-badge">
+            <img
+              src="/guarantee-7-days.png"
+              alt="7 Day Money Back Guarantee"
+              loading="lazy"
+            />
+          </div>
 
-    <div className="testimonials-grid">
-      {/* Card 1 */}
-      <article className="t-card">
-        <div className="t-head">
-          <img className="t-avatar" src="/ml1.jpg" alt="Stefanny" />
-          <div className="t-meta">
-            <div className="t-name">Stefanny</div>
-            <div className="t-stars" aria-label="5 stars">
-              ★★★★★
+          <div className="guarantee-content">
+            <h2 className="guarantee-title">UNCONDITIONAL GUARANTEE</h2>
+
+            <p className="guarantee-text">
+              If you buy our recipes and for some reason you don’t like it, just ask
+              us for your money back within 7 days of purchase and we’ll give you a
+              100% refund, without any red tape!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT YOU WILL GET / OFFER CARD */}
+      {/* FINAL CTA (CHECKOUT) */}
+      <section className="checkout" id="checkout">
+        <div className="checkout-wrap">
+          <div className="checkout-card">
+            <h2 className="checkout-title">READY TO GET INSTANT ACCESS?</h2>
+            <p className="checkout-sub">
+              Secure checkout • Instant delivery • 7-day guarantee
+            </p>
+
+            <button id="checkout" className="checkout-cta">
+              BUY NOW <span className="checkout-arrow">→</span>
+            </button>
+
+
+            <div className="checkout-mini">
+              <span className="checkout-lock">🔒</span>
+              <span>Safe purchase</span>
+            </div>
+
+            <div className="checkout-stock">
+              <div className="checkout-stock-top">
+                <span>LAST 8 UNITS AVAILABLE</span>
+                <span className="checkout-pct">85%</span>
+              </div>
+              <div className="checkout-bar">
+                <div className="checkout-fill" style={{ width: "85%" }} />
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <p className="t-text">
-          I love the material, very practical and beautiful. I liked it so much
-          that I recommended it to friends. Thank you for the material and your
-          attention. Approved!
-        </p>
-      </article>
 
-      {/* Card 2 */}
-      <article className="t-card">
-        <div className="t-head">
-          <img className="t-avatar" src="/ml2.jpg" alt="Sophia" />
-          <div className="t-meta">
-            <div className="t-name">Sophia</div>
-            <div className="t-stars" aria-label="5 stars">
-              ★★★★★
-            </div>
+      {/* FAQ */}
+      <section className="faq">
+        <div className="faq-wrap">
+          <h2 className="faq-title">Frequently Asked Questions</h2>
+
+          <div className="faq-item">
+            <details>
+              <summary>Is this suitable for beginners?</summary>
+              <p>
+                Yes. All recipes and video lessons are simple, practical, and made for
+                people who want results without complicated steps.
+              </p>
+            </details>
+          </div>
+
+          <div className="faq-item">
+            <details>
+              <summary>Do I get instant access after purchase?</summary>
+              <p>
+                Yes. As soon as your payment is confirmed, you’ll receive immediate
+                access to all materials included in the Zero Delights Club.
+              </p>
+            </details>
+          </div>
+
+          <div className="faq-item">
+            <details>
+              <summary>Are the recipes sugar free?</summary>
+              <p>
+                Yes. All recipes are made with zero added sugar and designed to help
+                you eat well without feeling restricted.
+              </p>
+            </details>
+          </div>
+
+          <div className="faq-item">
+            <details>
+              <summary>Can I access the content on my phone?</summary>
+              <p>
+                Absolutely. Everything is 100% mobile-friendly, so you can access the
+                recipes and videos directly from your phone.
+              </p>
+            </details>
+          </div>
+
+          <div className="faq-item">
+            <details>
+              <summary>Is this a subscription?</summary>
+              <p>
+                No. This is a one-time purchase. You pay once and get full access to
+                everything included.
+              </p>
+            </details>
+          </div>
+
+          <div className="faq-item">
+            <details>
+              <summary>What if I don’t like it?</summary>
+              <p>
+                You’re protected by our satisfaction guarantee. If it’s not for you,
+                you can request a refund according to the policy shown on the checkout
+                page.
+              </p>
+            </details>
           </div>
         </div>
+      </section>
 
-        <p className="t-text">
-          I loved the recipes, they are simple and easy to prepare. I already
-          had the ingredients at home. Very convenient. I’m diabetic and these
-          recipes help me a lot to balance my blood sugar.
-        </p>
-      </article>
 
-      {/* Card 3 */}
-      <article className="t-card">
-        <div className="t-head">
-          <img className="t-avatar" src="/ml3.jpg" alt="Albert" />
-          <div className="t-meta">
-            <div className="t-name">Albert</div>
-            <div className="t-stars" aria-label="5 stars">
-              ★★★★★
-            </div>
+
+      {/* FOOTER */}
+      <footer className="site-footer">
+        <div className="footer-wrap">
+          <p className="footer-brand">© {new Date().getFullYear()} Zero Delights Club</p>
+
+          <div className="footer-links">
+            <a className="footer-link" href="/terms">Terms of Use</a>
+            <span className="footer-sep">•</span>
+            <a className="footer-link" href="/privacy">Privacy Policy</a>
           </div>
         </div>
-
-        <p className="t-text">
-          My wife saw the ad and we decided to buy it. Even I, who doesn’t
-          normally cook, made one and it went well. Payment was instant and
-          everything worked perfectly. I recommend it!
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-{/* STATS / PROOF */}
-<section className="stats">
-  <div className="stats-wrap">
-    <h2 className="stats-title">
-      DID YOU KNOW THAT IT IS PROVEN BY DOCTORS AND NUTRITIONISTS THAT FOOD IS
-      THE KEY TO TOTAL CONTROL OF DIABETES?
-    </h2>
-
-    <p className="stats-sub">
-      Every year, the number of people who discover this secret and change their
-      lives grows. See what the latest data suggests:
-    </p>
-
-    <div className="stats-grid">
-      <StatCard
-        id="s1"
-        prefix="+"
-        value={7000000}
-        suffix=""
-        label="More than 7 million people around the world have lost weight and controlled their diabetes."
-      />
-
-      <StatCard
-        id="s2"
-        prefix="+"
-        value={1000}
-        suffix=""
-        label="A habit change indicated for those who want to control diabetes naturally and without medication."
-      />
-
-      <StatCard
-        id="s3"
-        prefix="+"
-        value={6257314}
-        suffix=""
-        label="Millions of people around the world reported dozens of benefits just by changing their diet."
-      />
-    </div>
-  </div>
-</section>
-
-
-
-{/* GUARANTEE */}
-<section className="guarantee">
-  <div className="guarantee-wrap">
-    <div className="guarantee-badge">
-      <img
-        src="/guarantee-7-days.png"
-        alt="7 Day Money Back Guarantee"
-        loading="lazy"
-      />
-    </div>
-
-    <div className="guarantee-content">
-      <h2 className="guarantee-title">UNCONDITIONAL GUARANTEE</h2>
-
-      <p className="guarantee-text">
-        If you buy our recipes and for some reason you don’t like it, just ask
-        us for your money back within 7 days of purchase and we’ll give you a
-        100% refund, without any red tape!
-      </p>
-    </div>
-  </div>
-</section>
-
-{/* WHAT YOU WILL GET / OFFER CARD */}
-<section className="whatget">
-  <div className="whatget-wrap">
-    <div className="whatget-card">
-      <h2 className="whatget-title">SEE WHAT YOU WILL GET</h2>
-      <p className="whatget-sub">
-        Everything you need to eat well without feeling restricted.
-      </p>
-
-      <ul className="whatget-list">
-        <li>
-          <span className="tick">✓</span>
-          <span><b>500 delicious & practical recipes</b> (easy step-by-step)</span>
-        </li>
-
-        <li>
-          <span className="tick">✓</span>
-          <span><b>VIP Members Community</b> (private updates + motivation)</span>
-        </li>
-
-        <li>
-          <span className="tick">✓</span>
-          <span><b>Bonus Ebook:</b> 100 Zero Bread Recipes</span>
-        </li>
-
-        <li>
-          <span className="tick">✓</span>
-          <span><b>Video lessons</b> (simple & straight to the point)</span>
-        </li>
-
-        <li>
-          <span className="tick">✓</span>
-          <span><b>Done-for-you meal ideas</b> (save time every day)</span>
-        </li>
-        
-        <li>
-          <span className="tick">✓</span>
-          <span><b>Instant access</b> right after payment confirmation</span>
-        </li>
-      </ul>
-
-      <div className="whatget-divider" />
-
-      <div className="whatget-price">
-        <div className="price-line">
-          From <span className="old">$67.90</span> for only
-        </div>
-        <div className="new">$17.00</div>
-      </div>
-
-      <div className="whatget-pay">
-        <div className="pay-title">PRICE IN DOLAR</div>
-        <div className="pay-sub">
-          PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW
-        </div>
-        <div className="pay-arrow" aria-hidden="true">⬇</div>
-      </div>
-
-      <button className="whatget-cta">BUY NOW</button>
-
-      <div className="whatget-stock">
-        <div className="stock-top">
-          <span>LAST 8 UNITS AVAILABLE</span>
-          <span className="stock-pct">85%</span>
-        </div>
-
-        <div className="stock-bar">
-          <div className="stock-fill" style={{ width: "85%" }} />
-        </div>
-      </div>
-
-      <div className="whatget-safe">🔒 SAFE PURCHASE</div>
-    </div>
-  </div>
-</section>
-
-{/* FAQ */}
-<section className="faq">
-  <div className="faq-wrap">
-    <h2 className="faq-title">Frequently Asked Questions</h2>
-
-    <div className="faq-item">
-      <details>
-        <summary>Is this suitable for beginners?</summary>
-        <p>
-          Yes. All recipes and video lessons are simple, practical, and made for
-          people who want results without complicated steps.
-        </p>
-      </details>
-    </div>
-
-    <div className="faq-item">
-      <details>
-        <summary>Do I get instant access after purchase?</summary>
-        <p>
-          Yes. As soon as your payment is confirmed, you’ll receive immediate
-          access to all materials included in the Zero Delights Club.
-        </p>
-      </details>
-    </div>
-
-    <div className="faq-item">
-      <details>
-        <summary>Are the recipes sugar free?</summary>
-        <p>
-          Yes. All recipes are made with zero added sugar and designed to help
-          you eat well without feeling restricted.
-        </p>
-      </details>
-    </div>
-
-    <div className="faq-item">
-      <details>
-        <summary>Can I access the content on my phone?</summary>
-        <p>
-          Absolutely. Everything is 100% mobile-friendly, so you can access the
-          recipes and videos directly from your phone.
-        </p>
-      </details>
-    </div>
-
-    <div className="faq-item">
-      <details>
-        <summary>Is this a subscription?</summary>
-        <p>
-          No. This is a one-time purchase. You pay once and get full access to
-          everything included.
-        </p>
-      </details>
-    </div>
-
-    <div className="faq-item">
-      <details>
-        <summary>What if I don’t like it?</summary>
-        <p>
-          You’re protected by our satisfaction guarantee. If it’s not for you,
-          you can request a refund according to the policy shown on the checkout
-          page.
-        </p>
-      </details>
-    </div>
-  </div>
-</section>
-
-
-
-{/* FOOTER */}
-<footer className="site-footer">
-  <div className="footer-wrap">
-    <p className="footer-brand">© {new Date().getFullYear()} Zero Delights Club</p>
-
-    <div className="footer-links">
-      <a className="footer-link" href="/terms">Terms of Use</a>
-      <span className="footer-sep">•</span>
-      <a className="footer-link" href="/privacy">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
+      </footer>
 
 
 
@@ -589,7 +550,7 @@ export default function Home() {
 
 
 
-  
+
     </>
   );
 }
@@ -603,7 +564,7 @@ function Carousel() {
   const [index, setIndex] = useState(0);
   const [perView, setPerView] = useState(4);
 
-   useEffect(() => {
+  useEffect(() => {
     const update = () => setPerView(window.innerWidth <= 900 ? 1 : 4);
     update();
     window.addEventListener("resize", update);
