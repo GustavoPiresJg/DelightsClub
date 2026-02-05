@@ -90,7 +90,7 @@ body {
   max-width: 22ch;
 }
 
-/* subtítulo tipo ProContent */
+
 .hero-sub {
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(14px, 1.35vw, 18px);
@@ -98,7 +98,7 @@ body {
   max-width: 50ch;
 }
 
-/* prova social */
+
 .hero-social {
   display: flex;
   align-items: center;
@@ -136,18 +136,12 @@ body {
   max-width: 520px;
   border-radius: 22px;
   padding: 20px;
-  background: rgba(20, 18, 40, 0.22);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(10px);
 }
 
 .hero-image img {
   width: 100%;
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
-  display: block;
 }
 
 /* CTA */
@@ -1652,4 +1646,17 @@ body {
   .pay-sub {
     font-size: 18px;
   }
+}
+
+.hero-image {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+
+  animation: floatSmooth 4.8s linear infinite;
+}
+
+@keyframes floatSmooth {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(0, -10px, 0); }
 }

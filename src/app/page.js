@@ -56,10 +56,13 @@ export default function Home() {
 
       <div className="hero-visual">
         <div className="hero-image reveal reveal-delay-1">
+
+          <div className="hero-image-wrapper">
           <img src="/recipe-card.png" alt="Recipes preview" />
         </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
 
@@ -658,3 +661,4 @@ function StatCard({ id, prefix = "", value = 0, suffix = "", label = "" }) {
     </div>
   );
 }
+
