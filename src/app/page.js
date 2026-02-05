@@ -404,7 +404,7 @@ export default function Home() {
 
 
       {/* GUARANTEE */}
-      <section className="guarantee">
+      <section  id="checkout" className="guarantee">
         <div className="guarantee-wrap">
           <div className="guarantee-badge">
             <img
@@ -414,7 +414,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="guarantee-content">
+          <div  className="guarantee-content">
             <h2 className="guarantee-title">UNCONDITIONAL GUARANTEE</h2>
 
             <p className="guarantee-text">
@@ -422,41 +422,14 @@ export default function Home() {
               us for your money back within 7 days of purchase and we’ll give you a
               100% refund, without any red tape!
             </p>
+ <button  className="guarantee-cta">
+    YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="guarantee-arrow">→</span>
+  </button>
+            
           </div>
-        </div>
-      </section>
+  
 
-      {/* WHAT YOU WILL GET / OFFER CARD */}
-      {/* FINAL CTA (CHECKOUT) */}
-      <section className="checkout" id="checkout">
-        <div className="checkout-wrap">
-          <div className="checkout-card">
-            <h2 className="checkout-title">READY TO GET INSTANT ACCESS?</h2>
-            <p className="checkout-sub">
-              Secure checkout • Instant delivery • 7-day guarantee
-            </p>
-
-            <button id="checkout" className="checkout-cta">
-              BUY NOW <span className="checkout-arrow">→</span>
-            </button>
-
-
-            <div className="checkout-mini">
-              <span className="checkout-lock">🔒</span>
-              <span>Safe purchase</span>
             </div>
-
-            <div className="checkout-stock">
-              <div className="checkout-stock-top">
-                <span>LAST 8 UNITS AVAILABLE</span>
-                <span className="checkout-pct">85%</span>
-              </div>
-              <div className="checkout-bar">
-                <div className="checkout-fill" style={{ width: "85%" }} />
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
 
