@@ -2111,6 +2111,16 @@ body {
   border-radius: 999px;
 }
 
+@media (max-width: 520px) {
+  .checkout::before,
+    .checkout::after {
+      display: none;
+  
+  }
+}
+
+
 html {
   scroll-behavior: smooth;
 }
+
