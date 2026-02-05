@@ -204,48 +204,66 @@ export default function Home() {
     </ul>
   </div>
 </section>
-
-
-
-
 {/* OFFER / PRICE */}
-<section className="offer">
-  <div className="offer-wrap">
-    <p className="offer-top">Do not lose this chance!</p>
+<section className="whatget whatget--mid">
+  <div className="whatget-wrap whatget-wrap--split">
 
-    <h2 className="offer-title">Limited time book promotion</h2>
-    <h3 className="offer-subtitle">More than 80% discount!</h3>
-
-    <div className="offer-book">
-      <img src="/recipe.jpg" alt="Zero Delights Book" />
+    <div className="whatget-mock">
+   
+      <img src="/bundle-mockup.png" alt="Zero Delights Club bundle" />
+      <div className="whatget-mock-note">
+        Instant access • Bonuses included • Limited-time price
+      </div>
     </div>
 
-    <p className="offer-price">
-      From <span className="offer-old">$67.90</span> for only{" "}
-      <span className="offer-new">$17.00</span>
-    </p>
+    {/* RIGHT: o card igual */}
+    <div className="whatget-card">
+      <h2 className="whatget-title">SEE WHAT YOU WILL GET</h2>
+      <p className="whatget-sub">
+        Everything you need to eat well without feeling restricted.
+      </p>
 
-    <p className="offer-note">PRICE IN DOLAR</p>
-    <p className="offer-note2">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</p>
+      <ul className="whatget-list">
+        <li><span className="tick">✓</span><span><b>500 delicious & practical recipes</b> (easy step-by-step)</span></li>
+        <li><span className="tick">✓</span><span><b>VIP Members Community</b> (private updates + motivation)</span></li>
+        <li><span className="tick">✓</span><span><b>Bonus Ebook:</b> 100 Zero Bread Recipes</span></li>
+        <li><span className="tick">✓</span><span><b>Video lessons</b> (simple & straight to the point)</span></li>
+        <li><span className="tick">✓</span><span><b>Done-for-you meal ideas</b> (save time every day)</span></li>
+        <li><span className="tick">✓</span><span><b>Instant access</b> right after payment confirmation</span></li>
+      </ul>
 
-    <div className="offer-down">⬇️</div>
+      <div className="whatget-divider" />
 
-    <button className="offer-cta">
-      YEAH! I WANT THE RECIPES
-    </button>
-
-    <div className="offer-stock">
-      <div className="offer-stock-top">
-        <span>LAST 8 UNITS AVAILABLE</span>
-        <span className="offer-stock-right">85%</span>
+      <div className="whatget-price">
+        <div className="price-line">
+          From <span className="old">$67.90</span> for only
+        </div>
+        <div className="new">$17.00</div>
       </div>
 
-      <div className="offer-bar">
-        <div className="offer-bar-fill" style={{ width: "92%" }} />
+      <div className="whatget-pay">
+        <div className="pay-title">PRICE IN DOLAR</div>
+        <div className="pay-sub">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</div>
+        <div className="pay-arrow" aria-hidden="true">⬇</div>
       </div>
+
+      <button className="whatget-cta">BUY NOW</button>
+
+      <div className="whatget-stock">
+        <div className="stock-top">
+          <span>LAST 8 UNITS AVAILABLE</span>
+          <span className="stock-pct">85%</span>
+        </div>
+        <div className="stock-bar">
+          <div className="stock-fill" style={{ width: "85%" }} />
+        </div>
+      </div>
+
+      <div className="whatget-safe">🔒 SAFE PURCHASE</div>
     </div>
   </div>
 </section>
+
 
 {/* TESTIMONIALS */}
 <section className="testimonials">
