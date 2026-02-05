@@ -1872,3 +1872,85 @@ body {
     font-size: 20px;
   }
 }
+
+
+/* ===== FAQ ===== */
+.faq {
+  background: #ffffff;
+  padding: 80px 16px;
+}
+
+.faq-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: clamp(22px, 6vw, 32px);
+  margin-bottom: 28px;
+  color: #2b1240;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+}
+
+.faq details {
+  background: #f7f4fa;
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 15px;
+  list-style: none;
+  position: relative;
+  padding-right: 24px;
+  color: #2b1240;
+}
+
+.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 18px;
+  font-weight: 900;
+  color: #a84ca6;
+}
+
+.faq details[open] summary::after {
+  content: "−";
+}
+
+.faq details p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b3a57;
+}
+
+/* Desktop polish */
+@media (min-width: 900px) {
+  .faq {
+    padding: 110px 24px;
+  }
+
+  .faq details {
+    padding: 18px 20px;
+  }
+
+  .faq summary {
+    font-size: 16px;
+  }
+
+  .faq details p {
+    font-size: 15px;
+  }
+}

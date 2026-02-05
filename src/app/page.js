@@ -498,6 +498,73 @@ export default function Home() {
   </div>
 </section>
 
+{/* FAQ */}
+<section className="faq">
+  <div className="faq-wrap">
+    <h2 className="faq-title">Frequently Asked Questions</h2>
+
+    <div className="faq-item">
+      <details>
+        <summary>Is this suitable for beginners?</summary>
+        <p>
+          Yes. All recipes and video lessons are simple, practical, and made for
+          people who want results without complicated steps.
+        </p>
+      </details>
+    </div>
+
+    <div className="faq-item">
+      <details>
+        <summary>Do I get instant access after purchase?</summary>
+        <p>
+          Yes. As soon as your payment is confirmed, you’ll receive immediate
+          access to all materials included in the Zero Delights Club.
+        </p>
+      </details>
+    </div>
+
+    <div className="faq-item">
+      <details>
+        <summary>Are the recipes sugar free?</summary>
+        <p>
+          Yes. All recipes are made with zero added sugar and designed to help
+          you eat well without feeling restricted.
+        </p>
+      </details>
+    </div>
+
+    <div className="faq-item">
+      <details>
+        <summary>Can I access the content on my phone?</summary>
+        <p>
+          Absolutely. Everything is 100% mobile-friendly, so you can access the
+          recipes and videos directly from your phone.
+        </p>
+      </details>
+    </div>
+
+    <div className="faq-item">
+      <details>
+        <summary>Is this a subscription?</summary>
+        <p>
+          No. This is a one-time purchase. You pay once and get full access to
+          everything included.
+        </p>
+      </details>
+    </div>
+
+    <div className="faq-item">
+      <details>
+        <summary>What if I don’t like it?</summary>
+        <p>
+          You’re protected by our satisfaction guarantee. If it’s not for you,
+          you can request a refund according to the policy shown on the checkout
+          page.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
 
 
 
@@ -513,6 +580,12 @@ export default function Home() {
     </div>
   </div>
 </footer>
+
+
+
+
+
+
 
 
 
