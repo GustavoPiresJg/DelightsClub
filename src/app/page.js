@@ -269,8 +269,9 @@ export default function Home() {
               <div className="pay-sub">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</div>
               <div className="pay-arrow" aria-hidden="true">⬇</div>
             </div>
-
-            <button className="whatget-cta">BUY NOW</button>
+<a href="#checkout">
+  <button className="whatget-cta">BUY NOW</button>
+</a>
 
             <div className="whatget-stock">
               <div className="stock-top">
