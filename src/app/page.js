@@ -499,6 +499,23 @@ export default function Home() {
 </section>
 
 
+
+
+{/* FOOTER */}
+<footer className="site-footer">
+  <div className="footer-wrap">
+    <p className="footer-brand">© {new Date().getFullYear()} Zero Delights Club</p>
+
+    <div className="footer-links">
+      <a className="footer-link" href="/terms">Terms of Use</a>
+      <span className="footer-sep">•</span>
+      <a className="footer-link" href="/privacy">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+
   
     </>
   );
