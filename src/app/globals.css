@@ -17,7 +17,7 @@ body {
 /* HERO */
 .hero {
   background: linear-gradient(135deg, #4b245f, #a84ca6);
-  padding: 100px 40px;
+  padding: 92px 24px;
   position: relative;
   overflow: hidden;
 }
@@ -51,9 +51,22 @@ body {
 .hero-content {
   max-width: 1200px;
   margin: auto;
-  display: flex;
+}
+
+/* NOVO layout */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 46px;
   align-items: center;
-  justify-content: center;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 18px;
 }
 
 .hero-text {
@@ -66,28 +79,75 @@ body {
   gap: 26px;
 }
 
+.hero-copy h1,
 .hero-text h1 {
   color: white;
-  font-weight: 800;
-  line-height: 1.08;
+  font-weight: 900;
+  line-height: 1.06;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  font-size: clamp(22px, 3.2vw, 44px);
-  max-width: 32ch;
+  font-size: clamp(10px, 3.2vw, 48px);
+  max-width: 22ch;
+}
+
+/* subtítulo tipo ProContent */
+.hero-sub {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(14px, 1.35vw, 18px);
+  line-height: 1.7;
+  max-width: 50ch;
+}
+
+/* prova social */
+.hero-social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.hero-stars {
+  display: inline-flex;
+  gap: 3px;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffd54a;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.hero-proof {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
 }
 
 /* HERO IMAGE */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
 .hero-image {
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 520px;
+  border-radius: 22px;
+  padding: 20px;
+  background: rgba(20, 18, 40, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(10px);
 }
 
 .hero-image img {
-  width: min(520px, 100%);
+  width: 100%;
   height: auto;
-  border-radius: 18px;
+  border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+  display: block;
 }
 
 /* CTA */
@@ -98,7 +158,7 @@ body {
   padding: 18px 34px;
   border-radius: 999px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
 
   position: relative;
@@ -155,6 +215,64 @@ body {
 .cta:hover .cta-arrow {
   transform: translateX(3px);
 }
+
+/* ===== MOBILE (100% pensado pro celular) ===== */
+@media (max-width: 900px) {
+  .hero {
+    padding: 72px 18px;
+  }
+
+  /* desliga bolhas no celular pra não invadir conteúdo */
+  .hero::before,
+  .hero::after {
+    display: none;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .hero-copy {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(22px, 7.2vw, 34px);
+    max-width: 28ch;
+    line-height: 1.08;
+  }
+
+  .hero-sub {
+    max-width: 34ch;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+
+  .cta {
+    width: 100%;
+    max-width: 420px;
+    padding: 18px 18px;
+  }
+
+  .hero-image {
+    max-width: 520px;
+    padding: 14px;
+  }
+}
+
+/* celulares bem pequenos */
+@media (max-width: 380px) {
+  .hero-copy h1 {
+    font-size: 22px;
+  }
+}
+
 
 /* BENEFITS */
 .benefits {

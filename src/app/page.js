@@ -25,27 +25,44 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO */}
-      <section className="hero reveal">
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1>
-              LEARN EASY AND DELICIOUS RECIPES SO THAT YOU NO LONGER HAVE TO
-              DEPRIVE YOURSELF OF ANYTHING, AND GO BACK TO EATING THE MOST
-              VARIED AND DELICIOUS TYPES OF FOOD!
-            </h1>
+     {/* HERO */}
+<section className="hero reveal">
+  <div className="hero-content">
+    <div className="hero-grid">
+      <div className="hero-copy">
+        <h1>
+          LEARN EASY AND DELICIOUS RECIPES SO THAT YOU NO LONGER HAVE TO
+          DEPRIVE YOURSELF OF ANYTHING, AND GO BACK TO EATING THE MOST
+          VARIED AND DELICIOUS TYPES OF FOOD!
+        </h1>
 
-            <div className="hero-image reveal reveal-delay-1">
-              <img src="/recipe-card.png" alt="Recipes preview" />
-            </div>
+        <p className="hero-sub">
+          Simple, practical, and sugar-free recipes to make your day easier without feeling restricted.
+        </p>
 
-            <button className="cta reveal reveal-delay-2">
-              YEAH! I WANT THE ZERO DELIGHTS CLUB{" "}
-              <span className="cta-arrow">→</span>
-            </button>
+        <div className="hero-social">
+          <div className="hero-stars" aria-label="5 star rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
           </div>
+          <span className="hero-proof">
+            Join 1,000+ people improving their routine with us
+          </span>
         </div>
-      </section>
+
+        <button className="cta reveal reveal-delay-2">
+          YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="cta-arrow">→</span>
+        </button>
+      </div>
+
+      <div className="hero-visual">
+        <div className="hero-image reveal reveal-delay-1">
+          <img src="/recipe-card.png" alt="Recipes preview" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* BENEFITS */}
       <section className="benefits reveal">
