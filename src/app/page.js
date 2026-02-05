@@ -211,7 +211,7 @@ export default function Home() {
     <div className="whatget-mock">
    
       <img src="/bundle-mockup.png" alt="Zero Delights Club bundle" />
-      <div className="whatget-mock-note">
+      <div className="whatget-kicker">
         Instant access • Bonuses included • Limited-time price
       </div>
     </div>
