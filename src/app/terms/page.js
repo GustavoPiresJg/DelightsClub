@@ -66,15 +66,28 @@ export default function TermsPage() {
           <p>
             If a refund policy is offered on the checkout page, it applies as
             described there. If you have any issues accessing the product,
-            contact support for help.
+            contact{" "}
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=suportdelightsclub@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#6c2f9b",
+                fontWeight: 700,
+                textDecoration: "underline",
+              }}
+            >
+              suportdelightsclub@gmail.com
+            </a>{" "}
+            for help.
           </p>
         </section>
+
 
         <section className="legal-section">
           <h2>6. Contact</h2>
           <p>
-            For questions about these terms, contact us using the support
-            information provided on the checkout or purchase confirmation.
+            For questions about these terms, contact us using the support.
           </p>
         </section>
       </div>
