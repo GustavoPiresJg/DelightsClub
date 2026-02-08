@@ -249,7 +249,8 @@ export default function Home() {
             <ul className="whatget-list">
               <li><span className="tick">✓</span><span><b>500 delicious & practical recipes</b> (easy step-by-step)</span></li>
               <li><span className="tick">✓</span><span><b>VIP Members Community</b> (private updates + motivation)</span></li>
-              <li><span className="tick">✓</span><span><b>Bonus Ebook:</b> 100 Zero Bread Recipes</span></li>
+              <li><span className="tick">✓</span><span><b>Bonus Ebook:</b> Perfect Gluten Free Recipes Breads</span></li>
+              <li><span className="tick">✓</span><span><b>2 Bonus Ebook:</b> Gluten-Free Cakes</span></li>
               <li><span className="tick">✓</span><span><b>Video lessons</b> (simple & straight to the point)</span></li>
               <li><span className="tick">✓</span><span><b>Done-for-you meal ideas</b> (save time every day)</span></li>
               <li><span className="tick">✓</span><span><b>Instant access</b> right after payment confirmation</span></li>
@@ -269,9 +270,9 @@ export default function Home() {
               <div className="pay-sub">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</div>
               <div className="pay-arrow" aria-hidden="true">⬇</div>
             </div>
-<a href="#checkout">
-  <button className="whatget-cta">BUY NOW</button>
-</a>
+            <a href="#checkout">
+              <button className="whatget-cta">BUY NOW</button>
+            </a>
 
             <div className="whatget-stock">
               <div className="stock-top">
@@ -404,7 +405,7 @@ export default function Home() {
 
 
       {/* GUARANTEE */}
-      <section  id="checkout" className="guarantee">
+      <section id="checkout" className="guarantee">
         <div className="guarantee-wrap">
           <div className="guarantee-badge">
             <img
@@ -414,7 +415,7 @@ export default function Home() {
             />
           </div>
 
-          <div  className="guarantee-content">
+          <div className="guarantee-content">
             <h2 className="guarantee-title">UNCONDITIONAL GUARANTEE</h2>
 
             <p className="guarantee-text">
@@ -422,14 +423,14 @@ export default function Home() {
               us for your money back within 7 days of purchase and we’ll give you a
               100% refund, without any red tape!
             </p>
- <button  className="guarantee-cta">
-    YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="guarantee-arrow">→</span>
-  </button>
-            
-          </div>
-  
+            <button className="guarantee-cta">
+              YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="guarantee-arrow">→</span>
+            </button>
 
-            </div>
+          </div>
+
+
+        </div>
       </section>
 
 
