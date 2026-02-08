@@ -572,7 +572,7 @@ export default function Home() {
           <div className="footer-links">
             <a className="footer-link" href="/terms">Terms of Use</a>
             <span className="footer-sep">•</span>
-            <a className="footer-link" href="/privacy">Privacy Policy</a>
+            <a className="footer-link" href="/register">Privacy Policy</a>
           </div>
         </div>
       </footer>
