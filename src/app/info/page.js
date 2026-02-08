@@ -7,11 +7,12 @@ export const metadata = {
     "Product information and compliance page for Zero Delights Club (educational content).",
 };
 
-const CHECKOUT_URL = ""; // <-- (opcional) cole aqui seu link de checkout quando quiser
+const CHECKOUT_URL =
+  "https://hotmart.com/EN/club/zero-delights-course/products/7172352"; // ✅ link do checkout
 const SUPPORT_EMAIL = "suportdelightsclub@gmail.com";
 
 export default function RegisterPage() {
-  const goTo = CHECKOUT_URL || "/#checkout";
+  const goTo = CHECKOUT_URL;
 
   return (
     <main style={styles.page}>
@@ -21,7 +22,7 @@ export default function RegisterPage() {
           <div style={styles.badge}>Digital Product</div>
           <h1 style={styles.title}>Zero Delights Club</h1>
           <p style={styles.subtitle}>
-           An educational program built around structured video lessons and an exclusive member community.
+            An educational program built around structured video lessons and an exclusive member community.
           </p>
         </header>
 
@@ -32,7 +33,7 @@ export default function RegisterPage() {
             {/* Mockup */}
             <div style={styles.mediaWrap}>
               <img
-                src="/bundle-mockup.webp"
+                src="/recipe-card.webp"
                 alt="Zero Delights Club — Product Mockup"
                 style={styles.media}
                 loading="lazy"
@@ -46,12 +47,8 @@ export default function RegisterPage() {
             <div style={styles.info}>
               <h2 style={styles.h2}>What you’ll receive</h2>
               <ul style={styles.list}>
-                <li style={styles.li}>
-                  Video lessons
-                </li>
-                <li style={styles.li}>
-                  Community access
-                </li>
+                <li style={styles.li}>Video lessons</li>
+                <li style={styles.li}>Community access</li>
                 <li style={styles.li}>Recipe ebooks and digital materials</li>
               </ul>
 
@@ -74,7 +71,6 @@ export default function RegisterPage() {
             </div>
           </div>
         </section>
-
 
         <h2 style={styles.h2}>Description</h2>
 
@@ -103,9 +99,7 @@ export default function RegisterPage() {
             your daily meals. Together, the community, the lessons, and the materials work
             as a complete system to make your routine easier, lighter, and more enjoyable.
           </p>
-
         </div>
-
 
         {/* Guarantee */}
         <section style={styles.guarantee}>
@@ -119,7 +113,6 @@ export default function RegisterPage() {
                 loading="lazy"
               />
             </div>
-
 
             <div style={styles.guaranteeText}>
               <h3 style={styles.guaranteeTitle}>
@@ -147,9 +140,7 @@ export default function RegisterPage() {
           </p>
 
           <p style={styles.p}>
-            Hotmart does not perform prior editorial review and does not
-            guarantee results or content quality. By purchasing the product, the
-            buyer acknowledges and agrees to these conditions.
+            Hotmart does not have editorial control of the products sold, nor does it assess the technical skills and expertise of those who produce them. The fact that a product is hosted at the platform and can be purchased there is under no circumstance a guarantee of content quality or results. By purchasing a product, buyers declare that they are aware of this information. Hotmart's terms and policies are available here and can be consulted at any time.
           </p>
         </section>
 
@@ -178,7 +169,7 @@ export default function RegisterPage() {
           </div>
         </footer>
       </div>
-    </main >
+    </main>
   );
 }
 
@@ -430,9 +421,7 @@ const styles = {
   },
 };
 
-
 // Mobile tweaks (sem CSS extra)
 if (typeof window !== "undefined") {
   // nada aqui — server safe
 }
-
