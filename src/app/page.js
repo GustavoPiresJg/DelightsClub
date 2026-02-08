@@ -233,7 +233,7 @@ export default function Home() {
 
           <div className="whatget-mock">
 
-            <img src="/bundle-mockup.webp" alt="Zero Delights Club bundle" />
+            <img src="/recipe-card.webp" alt="Zero Delights Club bundle" />
             <div className="whatget-kicker">
               Instant access • Bonuses included • Limited-time price
             </div>
