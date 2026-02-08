@@ -233,7 +233,7 @@ export default function Home() {
 
           <div className="whatget-mock">
 
-            <img src="/recipe-card.webp" alt="Zero Delights Club bundle" />
+            <img src="/webp" alt="Zero Delights Club bundle" />
             <div className="whatget-kicker">
               Instant access • Bonuses included • Limited-time price
             </div>
@@ -466,32 +466,36 @@ export default function Home() {
 
       {/* GUARANTEE */}
       <section id="checkout" className="guarantee">
-        <div className="guarantee-wrap">
-          <div className="guarantee-badge">
-            <img
-              src="/guarantee-7-days.webp"
-              alt="7 Day Money Back Guarantee"
-              loading="lazy"
-            />
-          </div>
+  <div className="guarantee-wrap">
+    <div className="guarantee-badge">
+      <img
+        src="/guarantee-7-days.webp"
+        alt="7 Day Money Back Guarantee"
+        loading="lazy"
+      />
+    </div>
 
-          <div className="guarantee-content">
-            <h2 className="guarantee-title">UNCONDITIONAL GUARANTEE</h2>
+    <div className="guarantee-content">
+      <h2 className="guarantee-title">UNCONDITIONAL GUARANTEE</h2>
 
-            <p className="guarantee-text">
-              If you buy our recipes and for some reason you don’t like it, just ask
-              us for your money back within 7 days of purchase and we’ll give you a
-              100% refund, without any red tape!
-            </p>
-            <button className="guarantee-cta">
-              YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="guarantee-arrow">→</span>
-            </button>
+      <p className="guarantee-text">
+        If you buy our recipes and for some reason you don’t like it, just ask
+        us for your money back within 7 days of purchase and we’ll give you a
+        100% refund, without any red tape!
+      </p>
 
-          </div>
+    <a
+  className="guarantee-cta"
+  href="https://pay.hotmart.com/A104341474Y?off=gdy60zm8&checkoutMode=10"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="guarantee-arrow">→</span>
+</a>
 
-
-        </div>
-      </section>
+    </div>
+  </div>
+</section>
 
 
       {/* FAQ */}
