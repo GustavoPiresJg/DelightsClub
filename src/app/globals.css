@@ -2201,3 +2201,21 @@ html {
   from { left: -60%; }
   to { left: 130%; }
 }
+
+
+/* === Mobile performance tweaks (safe) === */
+@media (max-width: 768px) {
+  .reveal {
+    will-change: opacity, transform;
+  }
+
+  .reveal,
+  .reveal-visible {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}

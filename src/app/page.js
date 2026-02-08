@@ -61,7 +61,7 @@ export default function Home() {
               <div className="hero-image reveal reveal-delay-1">
 
                 <div className="hero-image-wrapper">
-                  <img src="/recipe-card.webp" alt="Recipes preview" />
+                  <img src="/recipe-card.webp" loading="eager" alt="Recipes preview" />
                 </div>
               </div>
             </div>
