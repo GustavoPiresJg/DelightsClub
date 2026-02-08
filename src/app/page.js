@@ -271,7 +271,7 @@ export default function Home() {
     <span className="item-text">
       <b>VIP Members Community</b> (private updates + motivation)
     </span>
-    <span className="item-value">($10 Value)</span>
+    <span className="item-value">($15 Value)</span>
   </li>
 
   <li>
@@ -279,7 +279,7 @@ export default function Home() {
     <span className="item-text">
       <b>Bonus Ebook:</b> Perfect Gluten Free Recipes Breads
     </span>
-    <span className="item-value">($7 Value)</span>
+    <span className="item-value">($27 Value)</span>
   </li>
 
   <li>
@@ -287,7 +287,7 @@ export default function Home() {
     <span className="item-text">
       <b>+ Bonus Ebook:</b> Gluten-Free Cakes
     </span>
-    <span className="item-value">($6 Value)</span>
+    <span className="item-value">($17 Value)</span>
   </li>
 
   <li>
@@ -316,7 +316,7 @@ export default function Home() {
 
 <div className="whatget-price">
   <div className="price-line">
-    From <span className="old">$67.90</span> for only
+    From <span className="old">$98.00</span> for only
   </div>
   <div className="new">$17.00</div>
 </div>

@@ -2283,6 +2283,7 @@ html {
   white-space: nowrap;
   padding-left: 8px;
   line-height: 1.2;
+  text-decoration: line-through;
 }
 
 /* Mobile: quebra bonitinho sem estourar */
