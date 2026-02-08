@@ -61,7 +61,7 @@ export default function Home() {
               <div className="hero-image reveal reveal-delay-1">
 
                 <div className="hero-image-wrapper">
-                  <img src="/recipe-card.png" alt="Recipes preview" />
+                  <img src="/recipe-card.webp" alt="Recipes preview" />
                 </div>
               </div>
             </div>
@@ -125,37 +125,37 @@ export default function Home() {
 
         <div className="recipes-grid">
           <div className="recipe-card reveal">
-            <img src="/r1.jpg" alt="Breakfasts and snacks" />
+            <img src="/r1.webp" alt="Breakfasts and snacks" />
             <h3>BREAKFASTS AND SNACKS</h3>
             <p>Quick and practical recipes.</p>
           </div>
 
           <div className="recipe-card reveal">
-            <img src="/r2.jpg" alt="Lunch and dinner" />
+            <img src="/r2.webp" alt="Lunch and dinner" />
             <h3>LUNCH AND DINNER</h3>
             <p>Complete meals with simple ingredients.</p>
           </div>
 
           <div className="recipe-card reveal">
-            <img src="/r3.jpg" alt="Sweets and desserts" />
+            <img src="/r3.webp" alt="Sweets and desserts" />
             <h3>SWEETS AND DESSERTS</h3>
             <p>Gluten-free and sugar-free desserts.</p>
           </div>
 
           <div className="recipe-card reveal">
-            <img src="/r4.jpg" alt="Zero soups and creams" />
+            <img src="/r4.webp" alt="Zero soups and creams" />
             <h3>ZERO SOUPS AND CREAMS</h3>
             <p>Nutritious soups and broths.</p>
           </div>
 
           <div className="recipe-card reveal">
-            <img src="/r5.jpg" alt="Zero sauces and pates" />
+            <img src="/r5.webp" alt="Zero sauces and pates" />
             <h3>ZERO SAUCES AND PATES</h3>
             <p>Delicious sauces and pates.</p>
           </div>
 
           <div className="recipe-card reveal">
-            <img src="/r6.jpg" alt="Zero homemade flour" />
+            <img src="/r6.webp" alt="Zero homemade flour" />
             <h3>ZERO HOMEMADE FLOUR</h3>
             <p>Low glycemic flours.</p>
           </div>
@@ -233,7 +233,7 @@ export default function Home() {
 
           <div className="whatget-mock">
 
-            <img src="/bundle-mockup.png" alt="Zero Delights Club bundle" />
+            <img src="/bundle-mockup.webp" alt="Zero Delights Club bundle" />
             <div className="whatget-kicker">
               Instant access • Bonuses included • Limited-time price
             </div>
@@ -304,7 +304,7 @@ export default function Home() {
             {/* Card 1 */}
             <article className="t-card">
               <div className="t-head">
-                <img className="t-avatar" src="/ml1.jpg" alt="Stefanny" />
+                <img className="t-avatar" src="/ml1.webp" alt="Stefanny" />
                 <div className="t-meta">
                   <div className="t-name">Stefanny</div>
                   <div className="t-stars" aria-label="5 stars">
@@ -323,7 +323,7 @@ export default function Home() {
             {/* Card 2 */}
             <article className="t-card">
               <div className="t-head">
-                <img className="t-avatar" src="/ml2.jpg" alt="Sophia" />
+                <img className="t-avatar" src="/ml2.webp" alt="Sophia" />
                 <div className="t-meta">
                   <div className="t-name">Sophia</div>
                   <div className="t-stars" aria-label="5 stars">
@@ -342,7 +342,7 @@ export default function Home() {
             {/* Card 3 */}
             <article className="t-card">
               <div className="t-head">
-                <img className="t-avatar" src="/ml3.jpg" alt="Albert" />
+                <img className="t-avatar" src="/ml3.webp" alt="Albert" />
                 <div className="t-meta">
                   <div className="t-name">Albert</div>
                   <div className="t-stars" aria-label="5 stars">
@@ -409,7 +409,7 @@ export default function Home() {
         <div className="guarantee-wrap">
           <div className="guarantee-badge">
             <img
-              src="/guarantee-7-days.png"
+              src="/guarantee-7-days.webp"
               alt="7 Day Money Back Guarantee"
               loading="lazy"
             />
@@ -532,7 +532,7 @@ export default function Home() {
 
 function Carousel() {
   const images = useMemo(
-    () => ["/c1.jpg", "/c2.jpg", "/c3.jpg", "/c4.jpg", "/c5.jpg"],
+    () => ["/c1.webp", "/c2.webp", "/c3.webp", "/c4.webp", "/c5.webp"],
     []
   );
 
