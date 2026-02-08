@@ -240,52 +240,112 @@ export default function Home() {
           </div>
 
           {/* RIGHT: o card igual */}
-          <div className="whatget-card">
-            <h2 className="whatget-title">SEE WHAT YOU WILL GET</h2>
-            <p className="whatget-sub">
-              Everything you need to eat well without feeling restricted.
-            </p>
+       <div className="whatget-card">
+  {/* TOP: reviews + live viewers */}
+<h2 className="whatget-title">SEE WHAT YOU WILL GET</h2>
 
-            <ul className="whatget-list">
-              <li><span className="tick">✓</span><span><b>500 delicious & practical recipes</b> (easy step-by-step)</span></li>
-              <li><span className="tick">✓</span><span><b>VIP Members Community</b> (private updates + motivation)</span></li>
-              <li><span className="tick">✓</span><span><b>Bonus Ebook:</b> Perfect Gluten Free Recipes Breads</span></li>
-              <li><span className="tick">✓</span><span><b>2 Bonus Ebook:</b> Gluten-Free Cakes</span></li>
-              <li><span className="tick">✓</span><span><b>Video lessons</b> (simple & straight to the point)</span></li>
-              <li><span className="tick">✓</span><span><b>Done-for-you meal ideas</b> (save time every day)</span></li>
-              <li><span className="tick">✓</span><span><b>Instant access</b> right after payment confirmation</span></li>
-            </ul>
+<p className="whatget-sub">
+  Everything you need to eat well without feeling restricted.
+</p>
 
-            <div className="whatget-divider" />
+<div className="whatget-meta">
+  <div className="whatget-rating" aria-label="Rated 5 out of 5">
+    <span className="stars" aria-hidden="true">★★★★★</span>
+    <span className="reviews-count">10,084 Reviews</span>
+  </div>
+</div>
 
-            <div className="whatget-price">
-              <div className="price-line">
-                From <span className="old">$67.90</span> for only
-              </div>
-              <div className="new">$17.00</div>
-            </div>
+<div className="whatget-lead">Act now and you will receive:</div>
 
-            <div className="whatget-pay">
-              <div className="pay-title">PRICE IN DOLAR</div>
-              <div className="pay-sub">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</div>
-              <div className="pay-arrow" aria-hidden="true">⬇</div>
-            </div>
-            <a href="#checkout">
-              <button className="whatget-cta">BUY NOW</button>
-            </a>
+<ul className="whatget-list">
+  <li>
+    <span className="tick">✓</span>
+    <span className="item-text">
+      <b>500 delicious & practical recipes</b> (easy step-by-step)
+    </span>
+    <span className="item-value">($39 Value)</span>
+  </li>
 
-            <div className="whatget-stock">
-              <div className="stock-top">
-                <span>LAST 8 UNITS AVAILABLE</span>
-                <span className="stock-pct">85%</span>
-              </div>
-              <div className="stock-bar">
-                <div className="stock-fill" style={{ width: "85%" }} />
-              </div>
-            </div>
+  <li>
+    <span className="tick">✓</span>
+    <span className="item-text">
+      <b>VIP Members Community</b> (private updates + motivation)
+    </span>
+    <span className="item-value">($10 Value)</span>
+  </li>
 
-            <div className="whatget-safe">🔒 SAFE PURCHASE</div>
-          </div>
+  <li>
+    <span className="tick">✓</span>
+    <span className="item-text">
+      <b>Bonus Ebook:</b> Perfect Gluten Free Recipes Breads
+    </span>
+    <span className="item-value">($7 Value)</span>
+  </li>
+
+  <li>
+    <span className="tick">✓</span>
+    <span className="item-text">
+      <b>+ Bonus Ebook:</b> Gluten-Free Cakes
+    </span>
+    <span className="item-value">($6 Value)</span>
+  </li>
+
+  <li>
+    <span className="tick">✓</span>
+    <span className="item-text">
+      <b>Video lessons</b> (simple & straight to the point)
+    </span>
+  </li>
+
+  <li>
+    <span className="tick">✓</span>
+    <span className="item-text">
+      <b>Done-for-you meal ideas</b> (save time every day)
+    </span> 
+  </li>
+
+  <li>
+    <span className="tick">✓</span>
+    <span className="item-text">
+      <b>Instant access</b> right after payment confirmation
+    </span>
+  </li>
+</ul>
+
+<div className="whatget-divider" />
+
+<div className="whatget-price">
+  <div className="price-line">
+    From <span className="old">$67.90</span> for only
+  </div>
+  <div className="new">$17.00</div>
+</div>
+
+<div className="whatget-pay">
+  <div className="pay-title">PRICE IN DOLAR</div>
+  <div className="pay-sub">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</div>
+  <div className="pay-arrow" aria-hidden="true">⬇</div>
+</div>
+
+<a href="#checkout">
+  <button className="whatget-cta">BUY NOW</button>
+</a>
+
+<div className="whatget-stock">
+  <div className="stock-top">
+    <span>LAST 8 UNITS AVAILABLE</span>
+    <span className="stock-pct">85%</span>
+  </div>
+
+  <div className="stock-bar">
+    <div className="stock-fill" style={{ width: "85%" }} />
+  </div>
+</div>
+
+<div className="whatget-safe">🔒 SAFE PURCHASE</div>
+
+</div>
+
         </div>
       </section>
 

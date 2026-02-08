@@ -2219,3 +2219,162 @@ html {
     height: auto;
   }
 }
+
+
+/* ===== WhatGet meta (reviews + viewers) ===== */
+.whatget-meta {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.whatget-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.whatget-rating .stars {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.whatget-rating .reviews-count {
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.whatget-viewers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+.whatget-viewers .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #ff39ff;
+  display: inline-block;
+}
+
+/* "Act now..." */
+.whatget-lead {
+  margin: 12px 0 10px;
+  font-weight: 800;
+  opacity: 0.95;
+}
+
+/* ===== list with values on the right ===== */
+.whatget-list li {
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  gap: 10px;
+  align-items: start;
+}
+
+.whatget-list .item-value {
+  font-weight: 900;
+  font-size: 13px;
+  color: #ff39ff;
+  white-space: nowrap;
+  padding-left: 8px;
+  line-height: 1.2;
+}
+
+/* Mobile: quebra bonitinho sem estourar */
+@media (max-width: 520px) {
+  .whatget-list li {
+    grid-template-columns: 18px 1fr;
+  }
+
+  .whatget-list .item-value {
+    grid-column: 2;
+    padding-left: 0;
+    margin-top: 2px;
+  }
+}
+
+/* ===== WhatGet meta (reviews + viewers) ===== */
+.whatget-meta {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.whatget-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.whatget-rating .stars {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.whatget-rating .reviews-count {
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.whatget-viewers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+.whatget-viewers .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #ff39ff;
+  display: inline-block;
+}
+
+/* "Act now..." */
+.whatget-lead {
+  margin: 12px 0 10px;
+  font-weight: 800;
+  opacity: 0.95;
+}
+
+/* ===== list with values on the right ===== */
+.whatget-list li {
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  gap: 10px;
+  align-items: start;
+}
+
+.whatget-list .item-value {
+  font-weight: 900;
+  font-size: 13px;
+  color: #ff39ff;
+  white-space: nowrap;
+  padding-left: 8px;
+  line-height: 1.2;
+}
+
+/* Mobile: quebra bonitinho sem estourar */
+@media (max-width: 520px) {
+  .whatget-list li {
+    grid-template-columns: 18px 1fr;
+  }
+
+  .whatget-list .item-value {
+    grid-column: 2;
+    padding-left: 0;
+    margin-top: 2px;
+  }
+}
+
+.whatget-meta {
+  padding: 5px;
+}
