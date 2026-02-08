@@ -1833,6 +1833,7 @@ body {
   }
 }
 
+
 /* ===== LEGAL BACK LINK ===== */
 .legal-back {
   display: inline-flex;
@@ -2002,6 +2003,7 @@ body {
     padding: 90px 14px;
   }
 }
+
 
 
 
@@ -2221,6 +2223,7 @@ html {
 }
 
 
+
 /* ===== WhatGet meta (reviews + viewers) ===== */
 .whatget-meta {
   display: grid;
@@ -2395,3 +2398,4 @@ html {
     grid-template-columns: 1fr !important;
   }
 }
+

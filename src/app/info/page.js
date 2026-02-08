@@ -21,8 +21,7 @@ export default function RegisterPage() {
           <div style={styles.badge}>Digital Product</div>
           <h1 style={styles.title}>Zero Delights Club</h1>
           <p style={styles.subtitle}>
-            Educational and informational content focused on sugar-free and
-            gluten-free recipes.
+           An educational program built around structured video lessons and an exclusive member community.
           </p>
         </header>
 
@@ -47,13 +46,13 @@ export default function RegisterPage() {
             <div style={styles.info}>
               <h2 style={styles.h2}>What you’ll receive</h2>
               <ul style={styles.list}>
+                <li style={styles.li}>
+                  Video lessons
+                </li>
+                <li style={styles.li}>
+                  Community access
+                </li>
                 <li style={styles.li}>Recipe ebooks and digital materials</li>
-                <li style={styles.li}>
-                  Video lessons (access instructions included)
-                </li>
-                <li style={styles.li}>
-                  Community access (as described on the checkout page)
-                </li>
               </ul>
 
               <div style={styles.priceRow}>
@@ -76,6 +75,38 @@ export default function RegisterPage() {
           </div>
         </section>
 
+
+        <h2 style={styles.h2}>Description</h2>
+
+        <div style={styles.productDescription}>
+          <p style={styles.productText}>
+            Zero Delights Club was created to help you build a healthy routine in a practical and sustainable way without feeling restricted or overwhelmed by complicated rules.
+          </p>
+
+          <p style={styles.productText}>
+            At the center of the program is an <b>exclusive community</b> combined with
+            clear and objective video lessons, designed to guide you step by step.
+            Inside the club, you’ll receive daily direction, simple explanations,
+            and ongoing motivation to help you stay consistent and <b>confident</b> in your journey.
+          </p>
+
+          <p style={styles.productText}>
+            The lessons show you how to organize your routine, make smarter food choices,
+            and apply the method in real life even if you’re starting from zero or don’t
+            have much experience in the kitchen. Everything is explained in a
+            straightforward way, so you know exactly what to do and how to move forward.
+          </p>
+
+          <p style={styles.productText}>
+            To support this process, you’ll also have access to recipe ebooks and digital
+            materials that complement the lessons and help you apply what you learn in
+            your daily meals. Together, the community, the lessons, and the materials work
+            as a complete system to make your routine easier, lighter, and more enjoyable.
+          </p>
+
+        </div>
+
+
         {/* Guarantee */}
         <section style={styles.guarantee}>
           {/* ✅ added className */}
@@ -89,12 +120,13 @@ export default function RegisterPage() {
               />
             </div>
 
+
             <div style={styles.guaranteeText}>
               <h3 style={styles.guaranteeTitle}>
                 You Are Backed By Our 100% Money Back Guarantee
               </h3>
               <p style={styles.guaranteeBody}>
-                Your investment today is covered by a 365 day, 100% Money Back
+                Your investment today is covered by a 7 day, 100% Money Back
                 Guarantee. If you change your mind for any reason over the next
                 three months, just email our team for a full refund without
                 questions asked.
@@ -146,7 +178,7 @@ export default function RegisterPage() {
           </div>
         </footer>
       </div>
-    </main>
+    </main >
   );
 }
 
@@ -158,6 +190,16 @@ const styles = {
     padding: "48px 16px",
     fontFamily:
       "ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji",
+  },
+  productDescription: {
+    marginTop: 14,
+    padding: "12px 0",
+  },
+  productText: {
+    margin: "0 0 10px",
+    fontSize: 14,
+    lineHeight: 1.65,
+    color: "rgba(0,0,0,0.75)",
   },
 
   guarantee: {
@@ -388,7 +430,9 @@ const styles = {
   },
 };
 
+
 // Mobile tweaks (sem CSS extra)
 if (typeof window !== "undefined") {
   // nada aqui — server safe
 }
+
