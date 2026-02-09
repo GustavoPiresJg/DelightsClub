@@ -2,6 +2,9 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 
+const CHECKOUT_LINK =
+  "https://pay.hotmart.com/A104341474Y?off=gdy60zm8&checkoutMode=10";
+
 export default function Home() {
   // Fade-in reveal
   useEffect(() => {
@@ -37,38 +40,48 @@ export default function Home() {
               </h1>
 
               <p className="hero-sub">
-                Simple, practical, and sugar-free recipes to make your day easier without feeling restricted.
+                Simple, practical, and sugar-free recipes to make your day easier
+                without feeling restricted.
               </p>
 
               <div className="hero-social">
                 <div className="hero-stars" aria-label="5 star rating">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
                 </div>
                 <span className="hero-proof">
                   Join 1,000+ people improving their routine with us
                 </span>
               </div>
 
-              <a href="#checkout">
-                <button className="cta reveal reveal-delay-2">
-                  YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="cta-arrow">→</span>
+              {/* ✅ agora vai direto pro checkout da Hotmart */}
+              <a
+                href="#buy-now"
+              >
+                <button type="button" className="cta reveal reveal-delay-2">
+                  YEAH! I WANT THE ZERO DELIGHTS CLUB{" "}
+                  <span className="cta-arrow">→</span>
                 </button>
               </a>
-
             </div>
 
             <div className="hero-visual">
               <div className="hero-image reveal reveal-delay-1">
-
                 <div className="hero-image-wrapper">
-                  <img src="/recipe-card.webp" loading="eager" alt="Recipes preview" />
+                  <img
+                    src="/recipe-card.webp"
+                    loading="eager"
+                    alt="Recipes preview"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
 
       {/* BENEFITS */}
       <section className="benefits reveal">
@@ -210,7 +223,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* FEATURES SIMPLE */}
       <section className="simple-features">
         <div className="simple-features-wrap">
@@ -227,128 +239,136 @@ export default function Home() {
           </ul>
         </div>
       </section>
+
       {/* OFFER / PRICE */}
       <section className="whatget whatget--mid">
         <div className="whatget-wrap whatget-wrap--split">
-
           <div className="whatget-mock">
-
-            <img src="/webp" alt="Zero Delights Club bundle" />
+            <img src="/recipe-card.webp" alt="Zero Delights Club bundle" />
             <div className="whatget-kicker">
               Instant access • Bonuses included • Limited-time price
             </div>
           </div>
 
-          {/* RIGHT: o card igual */}
-       <div className="whatget-card">
-  {/* TOP: reviews + live viewers */}
-<h2 className="whatget-title">SEE WHAT YOU WILL GET</h2>
+          <div className="whatget-card">
+            <h2 className="whatget-title">SEE WHAT YOU WILL GET</h2>
 
-<p className="whatget-sub">
-  Everything you need to eat well without feeling restricted.
-</p>
+            <p className="whatget-sub">
+              Everything you need to eat well without feeling restricted.
+            </p>
 
-<div className="whatget-meta">
-  <div className="whatget-rating" aria-label="Rated 5 out of 5">
-    <span className="stars" aria-hidden="true">★★★★★</span>
-    <span className="reviews-count">10,084 Reviews</span>
-  </div>
-</div>
+            <div className="whatget-meta">
+              <div className="whatget-rating" aria-label="Rated 5 out of 5">
+                <span className="stars" aria-hidden="true">
+                  ★★★★★
+                </span>
+                <span className="reviews-count">10,084 Reviews</span>
+              </div>
+            </div>
 
-<div className="whatget-lead">Act now and you will receive:</div>
+            <div id="buy-now" className="whatget-lead">Act now and you will receive:</div>
 
-<ul className="whatget-list">
-  <li>
-    <span className="tick">✓</span>
-    <span className="item-text">
-      <b>500 delicious & practical recipes</b> (easy step-by-step)
-    </span>
-    <span className="item-value">($39 Value)</span>
-  </li>
+            <ul className="whatget-list">
+              <li>
+                <span className="tick">✓</span>
+                <span className="item-text">
+                  <b>500 delicious & practical recipes</b> (easy step-by-step)
+                </span>
+                <span className="item-value">($39 Value)</span>
+              </li>
 
-  <li>
-    <span className="tick">✓</span>
-    <span className="item-text">
-      <b>VIP Members Community</b> (private updates + motivation)
-    </span>
-    <span className="item-value">($15 Value)</span>
-  </li>
+              <li>
+                <span className="tick">✓</span>
+                <span className="item-text">
+                  <b>VIP Members Community</b> (private updates + motivation)
+                </span>
+                <span className="item-value">($15 Value)</span>
+              </li>
 
-  <li>
-    <span className="tick">✓</span>
-    <span className="item-text">
-      <b>Bonus Ebook:</b> Perfect Gluten Free Recipes Breads
-    </span>
-    <span className="item-value">($27 Value)</span>
-  </li>
+              <li>
+                <span className="tick">✓</span>
+                <span className="item-text">
+                  <b>Bonus Ebook:</b> Perfect Gluten Free Recipes Breads
+                </span>
+                <span className="item-value">($27 Value)</span>
+              </li>
 
-  <li>
-    <span className="tick">✓</span>
-    <span className="item-text">
-      <b>+ Bonus Ebook:</b> Gluten-Free Cakes
-    </span>
-    <span className="item-value">($17 Value)</span>
-  </li>
+              <li>
+                <span className="tick">✓</span>
+                <span className="item-text">
+                  <b>+ Bonus Ebook:</b> Gluten-Free Cakes
+                </span>
+                <span className="item-value">($17 Value)</span>
+              </li>
 
-  <li>
-    <span className="tick">✓</span>
-    <span className="item-text">
-      <b>Video lessons</b> (simple & straight to the point)
-    </span>
-  </li>
+              <li>
+                <span className="tick">✓</span>
+                <span className="item-text">
+                  <b>Video lessons</b> (simple & straight to the point)
+                </span>
+              </li>
 
-  <li>
-    <span className="tick">✓</span>
-    <span className="item-text">
-      <b>Done-for-you meal ideas</b> (save time every day)
-    </span> 
-  </li>
+              <li>
+                <span className="tick">✓</span>
+                <span className="item-text">
+                  <b>Done-for-you meal ideas</b> (save time every day)
+                </span>
+              </li>
 
-  <li>
-    <span className="tick">✓</span>
-    <span className="item-text">
-      <b>Instant access</b> right after payment confirmation
-    </span>
-  </li>
-</ul>
+              <li>
+                <span className="tick">✓</span>
+                <span className="item-text">
+                  <b>Instant access</b> right after payment confirmation
+                </span>
+              </li>
+            </ul>
 
-<div className="whatget-divider" />
+            <div className="whatget-divider" />
 
-<div className="whatget-price">
-  <div className="price-line">
-    From <span className="old">$98.00</span> for only
-  </div>
-  <div className="new">$17.00</div>
-</div>
+            <div className="whatget-price">
+              <div className="price-line">
+                From <span className="old">$98.00</span> for only
+              </div>
+              <div className="new">$17.00</div>
+            </div>
 
-<div className="whatget-pay">
-  <div className="pay-title">PRICE IN DOLAR</div>
-  <div className="pay-sub">PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW</div>
-  <div className="pay-arrow" aria-hidden="true">⬇</div>
-</div>
+            <div className="whatget-pay">
+              <div className="pay-title">PRICE IN DOLAR</div>
+              <div className="pay-sub">
+                PAY IN YOUR LOCAL CURRENCY BY CLICKING BELOW
+              </div>
+              <div className="pay-arrow" aria-hidden="true">
+                ⬇
+              </div>
+            </div>
 
-<a href="#checkout">
-  <button className="whatget-cta">BUY NOW</button>
-</a>
+            {/* ✅ BUY NOW agora leva pro checkout */}
+            <a
+              href={CHECKOUT_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button type="button" className="whatget-cta">
+                BUY NOW
+              </button>
+            </a>
 
-<div className="whatget-stock">
-  <div className="stock-top">
-    <span>LAST 8 UNITS AVAILABLE</span>
-    <span className="stock-pct">85%</span>
-  </div>
 
-  <div className="stock-bar">
-    <div className="stock-fill" style={{ width: "85%" }} />
-  </div>
-</div>
+            <div className="whatget-stock">
+              <div className="stock-top">
+                <span>LAST 8 UNITS AVAILABLE</span>
+                <span className="stock-pct">85%</span>
+              </div>
 
-<div className="whatget-safe">🔒 SAFE PURCHASE</div>
+              <div className="stock-bar">
+                <div className="stock-fill" style={{ width: "85%" }} />
+              </div>
+            </div>
 
-</div>
-
+            <div className="whatget-safe">🔒 SAFE PURCHASE</div>
+          </div>
         </div>
       </section>
-
 
       {/* TESTIMONIALS */}
       <section className="testimonials">
@@ -361,7 +381,6 @@ export default function Home() {
           </p>
 
           <div className="testimonials-grid">
-            {/* Card 1 */}
             <article className="t-card">
               <div className="t-head">
                 <img className="t-avatar" src="/ml1.webp" alt="Stefanny" />
@@ -380,7 +399,6 @@ export default function Home() {
               </p>
             </article>
 
-            {/* Card 2 */}
             <article className="t-card">
               <div className="t-head">
                 <img className="t-avatar" src="/ml2.webp" alt="Sophia" />
@@ -399,7 +417,6 @@ export default function Home() {
               </p>
             </article>
 
-            {/* Card 3 */}
             <article className="t-card">
               <div className="t-head">
                 <img className="t-avatar" src="/ml3.webp" alt="Albert" />
@@ -462,41 +479,36 @@ export default function Home() {
         </div>
       </section>
 
-
-
       {/* GUARANTEE */}
-      <section id="checkout" className="guarantee">
-  <div className="guarantee-wrap">
-    <div className="guarantee-badge">
-      <img
-        src="/guarantee-7-days.webp"
-        alt="7 Day Money Back Guarantee"
-        loading="lazy"
-      />
-    </div>
+      <div className="guarantee-wrap">
+        <div className="guarantee-badge">
+          <img
+            src="/guarantee-7-days.webp"
+            alt="7 Day Money Back Guarantee"
+            loading="lazy"
+          />
+        </div>
 
-    <div className="guarantee-content">
-      <h2 className="guarantee-title">UNCONDITIONAL GUARANTEE</h2>
+        <div className="guarantee-content">
+          <h2 className="guarantee-title">UNCONDITIONAL GUARANTEE</h2>
 
-      <p className="guarantee-text">
-        If you buy our recipes and for some reason you don’t like it, just ask
-        us for your money back within 7 days of purchase and we’ll give you a
-        100% refund, without any red tape!
-      </p>
+          <p className="guarantee-text">
+            If you buy our recipes and for some reason you don’t like it, just ask
+            us for your money back within 7 days of purchase and we’ll give you a
+            100% refund, without any red tape!
+          </p>
 
-    <a
-  className="guarantee-cta"
-  href="https://pay.hotmart.com/A104341474Y?off=gdy60zm8&checkoutMode=10"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  YEAH! I WANT THE ZERO DELIGHTS CLUB <span className="guarantee-arrow">→</span>
-</a>
-
-    </div>
-  </div>
-</section>
-
+          {/* ✅ agora vai direto pro checkout da Hotmart */}
+          <a
+            href="#buy-now"
+          >
+            <button type="button" className="guarantee-cta">
+              YEAH! I WANT THE ZERO DELIGHTS CLUB{" "}
+              <span className="guarantee-arrow">→</span>
+            </button>
+          </a>
+        </div>
+      </div>
 
       {/* FAQ */}
       <section className="faq">
@@ -566,30 +578,24 @@ export default function Home() {
         </div>
       </section>
 
-
-
       {/* FOOTER */}
       <footer className="site-footer">
         <div className="footer-wrap">
-          <p className="footer-brand">© {new Date().getFullYear()} Zero Delights Club</p>
+          <p className="footer-brand">
+            © {new Date().getFullYear()} Zero Delights Club
+          </p>
 
           <div className="footer-links">
-            <a className="footer-link" href="/terms">Terms of Use</a>
+            <a className="footer-link" href="/terms">
+              Terms of Use
+            </a>
             <span className="footer-sep">•</span>
-            <a className="footer-link" href="/register">Privacy Policy</a>
+            <a className="footer-link" href="/register">
+              Privacy Policy
+            </a>
           </div>
         </div>
       </footer>
-
-
-
-
-
-
-
-
-
-
     </>
   );
 }
@@ -712,13 +718,12 @@ function StatCard({ id, prefix = "", value = 0, suffix = "", label = "" }) {
         if (entries[0].isIntersecting && !started) {
           started = true;
 
-          const duration = 700; // rápido e bonito
+          const duration = 700;
           const start = performance.now();
           const from = 0;
 
           const tick = (now) => {
             const t = Math.min(1, (now - start) / duration);
-            // easing suave mas rápido
             const eased = 1 - Math.pow(1 - t, 3);
             const current = Math.round(from + (value - from) * eased);
             setDisplay(current);
@@ -751,4 +756,3 @@ function StatCard({ id, prefix = "", value = 0, suffix = "", label = "" }) {
     </div>
   );
 }
-
