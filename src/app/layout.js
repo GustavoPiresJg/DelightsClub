@@ -10,13 +10,22 @@ const inter = Inter({
 
 export const metadata = {
   title: "Zero Delights Club",
-  description: "Structured video lessons combined with an exclusive community experience",
+  description:
+    "Structured video lessons combined with an exclusive community experience",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* 🔹 UTMify UTMs (OBRIGATÓRIO) */}
+        <Script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          strategy="afterInteractive"
+          data-utmify-prevent-subids
+        />
+
+        {/* 🔹 UTMify Pixel */}
         <Script id="utmify-pixel" strategy="afterInteractive">
           {`
             window.pixelId = "6989106fec899b39d3fd4a45";
