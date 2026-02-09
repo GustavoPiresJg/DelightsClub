@@ -266,7 +266,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div id="buy-now" className="whatget-lead">Act now and you will receive:</div>
+            <div className="whatget-lead">Act now and you will receive:</div>
 
             <ul className="whatget-list">
               <li>
@@ -277,6 +277,8 @@ export default function Home() {
                 <span className="item-value">($39 Value)</span>
               </li>
 
+<div id="buy-now">
+</div>
               <li>
                 <span className="tick">✓</span>
                 <span className="item-text">
@@ -284,7 +286,6 @@ export default function Home() {
                 </span>
                 <span className="item-value">($15 Value)</span>
               </li>
-
               <li>
                 <span className="tick">✓</span>
                 <span className="item-text">
@@ -300,7 +301,6 @@ export default function Home() {
                 </span>
                 <span className="item-value">($17 Value)</span>
               </li>
-
               <li>
                 <span className="tick">✓</span>
                 <span className="item-text">
@@ -498,7 +498,6 @@ export default function Home() {
             100% refund, without any red tape!
           </p>
 
-          {/* ✅ agora vai direto pro checkout da Hotmart */}
           <a
             href="#buy-now"
           >
