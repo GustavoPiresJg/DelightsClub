@@ -277,8 +277,6 @@ export default function Home() {
                 <span className="item-value">($39 Value)</span>
               </li>
 
-<div id="buy-now">
-</div>
               <li>
                 <span className="tick">✓</span>
                 <span className="item-text">
@@ -290,6 +288,8 @@ export default function Home() {
                 <span className="tick">✓</span>
                 <span className="item-text">
                   <b>Bonus Ebook:</b> Perfect Gluten Free Recipes Breads
+<div id="buy-now">
+</div>
                 </span>
                 <span className="item-value">($27 Value)</span>
               </li>
