@@ -2399,3 +2399,68 @@ html {
   }
 }
 
+
+
+/* CSS DO MEMBERSHIP */
+
+/* Membership page */
+.mb-wrap{
+  min-height: 100vh;
+  background:#fff;
+  padding: 28px 16px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+  color:#0b0b0c;
+}
+
+.mb-card{
+  width:100%;
+  max-width:720px;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.10);
+  border-radius:18px;
+  padding:18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  text-align:center;
+}
+
+.mb-hero{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-bottom:16px;
+}
+
+.mb-heroImg{
+  width:min(420px, 100%);
+  height:auto;
+  border-radius:14px;
+  border:1px solid rgba(0,0,0,0.08);
+  background:#f6f6f6;
+  display:block;
+}
+
+.mb-title{
+  margin:0 0 10px;
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:-0.2px;
+}
+
+.mb-text{
+  margin:0 0 10px;
+  font-size:14px;
+  line-height:1.65;
+  color: rgba(0,0,0,0.75);
+}
+
+.mb-text:last-child{ margin-bottom:0; }
+
+@media (min-width: 768px){
+  .mb-wrap{ padding:48px 16px; }
+  .mb-card{ padding:22px; }
+  .mb-title{ font-size:20px; }
+  .mb-text{ font-size:14.5px; }
+}
