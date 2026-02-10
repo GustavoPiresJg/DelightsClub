@@ -4,76 +4,76 @@ import { useCallback, useRef } from "react";
 import Script from "next/script";
 
 export default function RecipesProPage() {
-  const hotmartMountedRef = useRef(false);
+    const hotmartMountedRef = useRef(false);
 
-  const mountHotmart = useCallback(() => {
-    if (hotmartMountedRef.current) return;
+    const mountHotmart = useCallback(() => {
+        if (hotmartMountedRef.current) return;
 
-    try {
-      const el = document.getElementById("hotmart-sales-funnel");
-      if (!el) return;
+        try {
+            const el = document.getElementById("hotmart-sales-funnel");
+            if (!el) return;
 
-      if (window.checkoutElements) {
-        window.checkoutElements.init("salesFunnel").mount("#hotmart-sales-funnel");
-        hotmartMountedRef.current = true;
-      }
-    } catch (e) {}
-  }, []);
+            if (window.checkoutElements) {
+                window.checkoutElements.init("salesFunnel").mount("#hotmart-sales-funnel");
+                hotmartMountedRef.current = true;
+            }
+        } catch (e) { }
+    }, []);
 
-  return (
-    <main className="page">
-      <Script id="vturb-perf" strategy="beforeInteractive">
-        {`!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);`}
-      </Script>
+    return (
+        <main className="page">
+            <Script id="vturb-perf" strategy="beforeInteractive">
+                {`!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);`}
+            </Script>
 
-      <Script
-        src="https://scripts.converteai.net/b6983c31-9e45-4de6-9678-d272c2ce100c/players/698a5c6baa8949c7cb3311b6/v4/player.js"
-        strategy="afterInteractive"
-      />
+            <Script
+                src="https://scripts.converteai.net/b6983c31-9e45-4de6-9678-d272c2ce100c/players/698a5c6baa8949c7cb3311b6/v4/player.js"
+                strategy="afterInteractive"
+            />
 
-      <Script
-        src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"
-        strategy="afterInteractive"
-        onLoad={mountHotmart}
-      />
+            <Script
+                src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"
+                strategy="afterInteractive"
+                onLoad={mountHotmart}
+            />
 
-      <section className="topbar">
-        <div className="topbar-inner">
-          <h1>Do not close this page</h1>
-          <p>
-            <b>Important:</b> Do not click “Back” or close this page. Watch the video below to confirm your purchase.
-          </p>
-        </div>
-      </section>
+            <section className="topbar">
+                <div className="topbar-inner">
+                    <h1>Do not close this page</h1>
+                    <p>
+                        <b>Important:</b> Do not click “Back” or close this page. Watch the video below to confirm your purchase.
+                    </p>
+                </div>
+            </section>
 
-      <section className="content">
-        {/* IMAGEM */}
-        <div className="block">
-          <div className="imgWrap">
-            <img className="img" src="/WAIT!.webp" alt="Almost gone" loading="lazy" />
-          </div>
-        </div>
+            <section className="content">
+                {/* IMAGEM */}
+                <div className="block">
+                    <div className="imgWrap">
+                        <img className="img" src="/WAIT!.webp" alt="Almost gone" loading="lazy" />
+                    </div>
+                </div>
 
-        {/* VTURB */}
-        <div className="block">
-          <div className="blockTitle">Click to listen</div>
-          <div className="videoWrap">
-            <vturb-smartplayer
-              id="vid-698a5c6baa8949c7cb3311b6"
-              style={{ display: "block", margin: "0 auto", width: "100%" }}
-            ></vturb-smartplayer>
-          </div>
-        </div>
+                {/* VTURB */}
+                <div className="block">
+                    <div className="blockTitle">Click to listen</div>
+                    <div className="videoWrap">
+                        <vturb-smartplayer
+                            id="vid-698a5c6baa8949c7cb3311b6"
+                            style={{ display: "block", margin: "0 auto", width: "100%" }}
+                        ></vturb-smartplayer>
+                    </div>
+                </div>
 
-        {/* HOTMART */}
-        <div className="wrap">
-          <div className="card">
-            <div id="hotmart-sales-funnel" className="funnel" />
-          </div>
-        </div>
-      </section>
+                {/* HOTMART */}
+                <div className="wrap">
+                    <div className="card">
+                        <div id="hotmart-sales-funnel" className="funnel" />
+                    </div>
+                </div>
+            </section>
 
-      <style jsx>{`
+            <style jsx>{`
         .page {
           background: #ffffff;
           color: #0b0b0c;
@@ -81,6 +81,20 @@ export default function RecipesProPage() {
           font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
             Apple Color Emoji, Segoe UI Emoji;
         }
+@media (max-width: 768px) {
+  .imgWrap img {
+    width: 100%;
+    max-width: none;
+    transform: scale(1.25);
+    padding-top: 24px;
+  }
+}
+
+
+
+
+
+
 
         .topbar {
           background: #4b76f2;
@@ -138,8 +152,20 @@ export default function RecipesProPage() {
         }
 
         .videoWrap {
-          padding: 14px; /* PC com respiro */
+          width: 100%
         }
+          
+
+        .videoWrap {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .videoWrap {
+    max-width: calc(100vw - 20px); /* cria espaço lateral real */
+    margin: 0 auto;
+  }
+}
 
         vturb-smartplayer {
           width: 100% !important;
@@ -196,6 +222,6 @@ export default function RecipesProPage() {
           }
         }
       `}</style>
-    </main>
-  );
+        </main>
+    );
 }
