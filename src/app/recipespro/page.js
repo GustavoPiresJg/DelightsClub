@@ -76,7 +76,6 @@ export default function RecipesProPage() {
 
           {/* Hotmart funnel */}
           <div className="card">
-            <div className="funnelTitle">Secure Checkout</div>
             <div id="hotmart-sales-funnel" className="funnel" />
           </div>
         </div>
