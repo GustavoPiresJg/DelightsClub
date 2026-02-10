@@ -7,38 +7,30 @@ export default function RecipesProPage() {
   const hotmartMountedRef = useRef(false);
 
   const mountHotmart = useCallback(() => {
-    // monta 1 vez só
     if (hotmartMountedRef.current) return;
 
     try {
       const el = document.getElementById("hotmart-sales-funnel");
       if (!el) return;
 
-      // checkoutElements vem do script da Hotmart
       if (window.checkoutElements) {
         window.checkoutElements.init("salesFunnel").mount("#hotmart-sales-funnel");
         hotmartMountedRef.current = true;
       }
-    } catch (e) {
-      // não explode o site por causa do widget
-      // (se a Hotmart bloquear, deixa quieto)
-    }
+    } catch (e) {}
   }, []);
 
   return (
     <main className="page">
-      {/* VTurb perf snippet */}
       <Script id="vturb-perf" strategy="beforeInteractive">
         {`!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);`}
       </Script>
 
-      {/* VTurb player script (melhor assim do que createElement manual) */}
       <Script
         src="https://scripts.converteai.net/b6983c31-9e45-4de6-9678-d272c2ce100c/players/698a5c6baa8949c7cb3311b6/v4/player.js"
         strategy="afterInteractive"
       />
 
-      {/* Hotmart funnel script + mount quando carregar */}
       <Script
         src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"
         strategy="afterInteractive"
@@ -55,26 +47,26 @@ export default function RecipesProPage() {
       </section>
 
       <section className="content">
+        {/* IMAGEM */}
+        <div className="block">
+          <div className="imgWrap">
+            <img className="img" src="/WAIT!.webp" alt="Almost gone" loading="lazy" />
+          </div>
+        </div>
+
+        {/* VTURB */}
+        <div className="block">
+          <div className="blockTitle">Click to listen</div>
+          <div className="videoWrap">
+            <vturb-smartplayer
+              id="vid-698a5c6baa8949c7cb3311b6"
+              style={{ display: "block", margin: "0 auto", width: "100%" }}
+            ></vturb-smartplayer>
+          </div>
+        </div>
+
+        {/* HOTMART */}
         <div className="wrap">
-          {/* Imagem / aviso */}
-          <div className="card">
-            <div className="imgWrap">
-              <img className="img" src="/WAIT!.webp" alt="Almost gone" loading="lazy" />
-            </div>
-          </div>
-
-          {/* VTurb */}
-          <div className="card">
-            <div className="videoTitle">Click to listen</div>
-            <div className="videoWrap">
-              <vturb-smartplayer
-                id="vid-698a5c6baa8949c7cb3311b6"
-                style={{ display: "block", margin: "0 auto", width: "100%" }}
-              ></vturb-smartplayer>
-            </div>
-          </div>
-
-          {/* Hotmart funnel */}
           <div className="card">
             <div id="hotmart-sales-funnel" className="funnel" />
           </div>
@@ -116,14 +108,11 @@ export default function RecipesProPage() {
         .content {
           padding: 18px 16px 40px;
         }
-        .wrap {
-          max-width: 980px;
-          margin: 0 auto;
-          display: grid;
-          gap: 18px;
-        }
 
-        .card {
+        /* ===== PC: tudo no quadrado central ===== */
+        .block {
+          max-width: 980px;
+          margin: 0 auto 18px;
           border: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: 16px;
           background: #fff;
@@ -141,8 +130,7 @@ export default function RecipesProPage() {
           display: block;
         }
 
-        .videoTitle,
-        .funnelTitle {
+        .blockTitle {
           padding: 14px 14px 0;
           font-size: 14px;
           font-weight: 800;
@@ -150,11 +138,53 @@ export default function RecipesProPage() {
         }
 
         .videoWrap {
+          padding: 14px; /* PC com respiro */
+        }
+
+        vturb-smartplayer {
+          width: 100% !important;
+          display: block !important;
+        }
+
+        /* HOTMART central */
+        .wrap {
+          max-width: 980px;
+          margin: 0 auto;
+        }
+        .card {
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 16px;
+          background: #fff;
+          overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+        .funnel {
           padding: 14px;
         }
 
-        .funnel {
-          padding: 14px;
+        /* ===== MOBILE: imagem + vídeo full width (ponta a ponta) ===== */
+        @media (max-width: 768px) {
+          .content {
+            padding: 0 0 40px; /* sem borda lateral */
+          }
+
+          .block {
+            max-width: none;
+            margin: 0 0 18px;
+            border-radius: 0; /* fica “colado” */
+            border-left: 0;
+            border-right: 0;
+          }
+
+          .videoWrap {
+            padding: 0; /* vídeo full */
+          }
+
+          .blockTitle {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 14px 16px 10px;
+          }
         }
 
         @media (min-width: 900px) {
