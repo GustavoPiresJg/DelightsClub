@@ -57,10 +57,12 @@ export default function Home() {
                 </span>
               </div>
 
-              {/* ✅ agora vai direto pro checkout da Hotmart */}
+              
               <a
-                href="#buy-now"
-              >
+              href={CHECKOUT_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
                 <button type="button" className="cta reveal reveal-delay-2">
                   YEAH! I WANT THE ZERO DELIGHTS CLUB{" "}
                   <span className="cta-arrow">→</span>
@@ -342,7 +344,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ✅ BUY NOW agora leva pro checkout */}
+      
             <a
               href={CHECKOUT_LINK}
               target="_blank"
@@ -499,7 +501,9 @@ export default function Home() {
           </p>
 
           <a
-            href="#buy-now"
+              href={CHECKOUT_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
           >
             <button type="button" className="guarantee-cta">
               YEAH! I WANT THE ZERO DELIGHTS CLUB{" "}
